@@ -44,10 +44,13 @@ const SignUpAddress = ({
       // 회원 정보를 Firestore에 저장
       await firestore().collection('users').doc(user.uid).set({
         id: user.uid,
+<<<<<<< HEAD
 >>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
 =======
       console.log('회원가입 데이터:', {
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
         checkboxState,
         email,
         address,
