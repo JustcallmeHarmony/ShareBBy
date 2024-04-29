@@ -33,7 +33,17 @@ const SignUpAddress = ({
   const onSignUp = async () => {
     try {
       // Firebase를 사용하여 회원가입 처리
+<<<<<<< HEAD
       console.log('회원가입 데이터:', {
+=======
+      console.log('회원가입 데이터:', { checkboxState, email, password, address, nickname }); 
+      const userCredential = await auth().createUserWithEmailAndPassword(email, password);
+      const user = userCredential.user;
+
+      // 회원 정보를 Firestore에 저장
+      await firestore().collection('users').doc(user.uid).set({
+        id: user.uid,
+>>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
         checkboxState,
         email,
         address,
