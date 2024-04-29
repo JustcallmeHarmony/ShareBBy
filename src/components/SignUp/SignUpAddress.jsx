@@ -37,10 +37,15 @@ const SignUpAddress = ({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b34e008 (소셜 로그인 연결 테스트)
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> adadf9d (소셜 로그인 연결 테스트)
+>>>>>>> 0d316ac (소셜 로그인 연결 테스트)
       console.log('회원가입 데이터:', {
 =======
       console.log('회원가입 데이터:', { checkboxState, email, password, address, nickname }); 
@@ -60,9 +65,12 @@ const SignUpAddress = ({
 =======
 >>>>>>> b34e008 (소셜 로그인 연결 테스트)
 >>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
+<<<<<<< HEAD
 =======
       console.log('회원가입 데이터:', {
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> adadf9d (소셜 로그인 연결 테스트)
         checkboxState,
         email,
         address,
