@@ -5,6 +5,9 @@ const { width, height } = Dimensions.get('window');
 
 const Main = ({ navigation, route }) => {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6241add (nothing)
     console.log(route);
     const [optionClick, setOptionClick] = useState(null);
     // const { userId, nickname } = route.params;
@@ -83,11 +86,15 @@ const Main = ({ navigation, route }) => {
                         // onViewableItemsChanged={onViewableItemsChanged}
                         // viewabilityConfig={viewabilityConfig.current}
 <<<<<<< HEAD
+<<<<<<< HEAD
                     />            
 =======
                     />
                     
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+                    />            
+>>>>>>> 6241add (nothing)
                 </View>
                 <View style={styles.divisionView} />
                 <View style={{ marginBottom: 20, paddingHorizontal: 16, gap: 6 }}>
@@ -106,8 +113,11 @@ const Main = ({ navigation, route }) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> 0f6d327 (nothing)
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
 =======
@@ -140,7 +150,13 @@ const Main = ({ navigation, route }) => {
 =======
                             onPress={() => navigation.navigate('Recruit')}>
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+<<<<<<< HEAD
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+                            onPress={() => navigation.navigate('Recruit', route)}>
+>>>>>>> 6241add (nothing)
+>>>>>>> 0f6d327 (nothing)
                             <Image source={goRecruit} style={{ width: 100, height: 100, marginTop: 'auto' }} />
                             <Text style={styles.hobbyText}>모집하기</Text>
                         </TouchableOpacity>
@@ -197,9 +213,12 @@ const Main = ({ navigation, route }) => {
                                 <Text>이나겸</Text>
                             </View>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> 6241add (nothing)
                         </View>
                     </View>
                 </View>
@@ -209,9 +228,13 @@ const Main = ({ navigation, route }) => {
     )
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+
+>>>>>>> 6241add (nothing)
 const dropDownIcon = require('../../assets/icons/dropDownIcon.png');
 const goJoin = require('../../assets/images/goJoin.png');
 const goRecruit = require('../../assets/images/goRecruit.png');
@@ -317,6 +340,7 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 682853e (nothing)
 =======
@@ -325,6 +349,12 @@ const styles = StyleSheet.create({
 =======
 >>>>>>> a706a9d (fix : stylesSheet fix)
 >>>>>>> 0b68d54 (fix : stylesSheet fix)
+=======
+=======
+>>>>>>> a706a9d (fix : stylesSheet fix)
+=======
+>>>>>>> 6241add (nothing)
+>>>>>>> 0f6d327 (nothing)
         width: 176, 
         height: 176, 
 =======
@@ -332,10 +362,14 @@ const styles = StyleSheet.create({
         height: 170, 
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6241add (nothing)
 =======
         width: 176, 
         height: 176, 
 >>>>>>> eaeef0e (nothing)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -354,6 +388,8 @@ const styles = StyleSheet.create({
 >>>>>>> 682853e (nothing)
 =======
 =======
+>>>>>>> 0f6d327 (nothing)
+=======
         width: 176, 
         height: 176, 
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
@@ -362,7 +398,12 @@ const styles = StyleSheet.create({
 =======
 =======
 >>>>>>> a706a9d (fix : stylesSheet fix)
+<<<<<<< HEAD
 >>>>>>> 0b68d54 (fix : stylesSheet fix)
+=======
+=======
+>>>>>>> 6241add (nothing)
+>>>>>>> 0f6d327 (nothing)
         overflow: 'hidden', 
         borderRadius: 15, 
     },

@@ -154,6 +154,7 @@ const SignUpAddress = ({
         profileImage: profileImageUrl, // Firebase Storage에서 가져온 URL 사용
       });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eaeef0e (nothing)
 =======
@@ -161,7 +162,12 @@ const SignUpAddress = ({
 =======
 
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+<<<<<<< HEAD
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> 6241add (nothing)
+>>>>>>> 0f6d327 (nothing)
       Alert.alert('회원가입 성공');
       navigation.navigate('Login');
     } catch (error) {

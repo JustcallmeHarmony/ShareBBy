@@ -1149,8 +1149,13 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> 6241add (nothing)
+>>>>>>> 0f6d327 (nothing)
       // console.log((await userCollection.doc(user.uid).get()).data());
 =======
       console.log((await userCollection.doc(user.uid).get()).data());
