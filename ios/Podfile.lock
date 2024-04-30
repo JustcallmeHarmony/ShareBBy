@@ -2429,6 +2429,7 @@ PODS:
     - React-Core
     - RNFBApp
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
   - RNGestureHandler (2.16.0):
 =======
@@ -2452,6 +2453,9 @@ PODS:
 =======
   - RNGestureHandler (2.16.1):
 >>>>>>> b966d85 (refactor: chat)
+=======
+  - RNGestureHandler (2.16.1):
+>>>>>>> 98db30d (fix : conflict)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2475,6 +2479,7 @@ PODS:
   - RNGoogleSignin (11.0.1):
     - GoogleSignIn (~> 7.0.0)
     - React-Core
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - RNImageCropPicker (0.40.3):
@@ -2539,6 +2544,9 @@ PODS:
 =======
   - RNNaverLogin (4.0.0):
 >>>>>>> b966d85 (refactor: chat)
+=======
+  - RNNaverLogin (4.0.0):
+>>>>>>> 98db30d (fix : conflict)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2959,6 +2967,7 @@ SPEC CHECKSUMS:
 <<<<<<< HEAD
 =======
   RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
+<<<<<<< HEAD
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
   RNGestureHandler: 72574cf7d3910bdbdf8136c1caf70cd45ede9d9f
   RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
@@ -3033,6 +3042,13 @@ SPEC CHECKSUMS:
 <<<<<<< HEAD
   TOCropViewController: b9b2905938c0424f289ea2d9964993044913fac6
   TOCropViewController: b9b2905938c0424f289ea2d9964993044913fac6
+=======
+  RNGestureHandler: ad030559c93b4fa018c35e84466021a03a71198c
+  RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
+  RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
+  RNScreens: 30249f9331c3b00ae7cb7922e11f58b3ed369c07
+  SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+>>>>>>> 98db30d (fix : conflict)
   Yoga: 3f9165051bbc60b66f6a88c5eeafd9e9faa29500
 
 <<<<<<< HEAD
