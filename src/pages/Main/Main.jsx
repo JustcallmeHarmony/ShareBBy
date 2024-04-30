@@ -90,6 +90,7 @@ const Main = ({ navigation, route }) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
 =======
@@ -101,6 +102,9 @@ const Main = ({ navigation, route }) => {
 =======
                             onPress={() => navigation.navigate('Recruit', route)}>
 >>>>>>> 99c4a90 (nothing)
+=======
+                            onPress={() => navigation.navigate('Recruit', route)}>
+>>>>>>> eaeef0e (nothing)
                             <Image source={goRecruit} style={{ width: 100, height: 100, marginTop: 'auto' }} />
                             <Text style={styles.hobbyText}>모집하기</Text>
                         </TouchableOpacity>
@@ -266,6 +270,7 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         width: 176, 
         height: 176, 
 =======
@@ -284,6 +289,10 @@ const styles = StyleSheet.create({
         width: 170, 
         height: 170, 
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
+=======
+        width: 176, 
+        height: 176, 
+>>>>>>> eaeef0e (nothing)
         overflow: 'hidden', 
         borderRadius: 15, 
     },

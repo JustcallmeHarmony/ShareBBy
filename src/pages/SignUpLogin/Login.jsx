@@ -689,6 +689,7 @@ const Login = ({navigation}) => {
       // 로그인 정보 가져오기
       const userCollection = firestore().collection('users');
 <<<<<<< HEAD
+<<<<<<< HEAD
       // console.log((await userCollection.doc(user.uid).get()).data());
 =======
       console.log((await userCollection.doc(user.uid).get()).data());
@@ -696,6 +697,9 @@ const Login = ({navigation}) => {
 >>>>>>> b966d85 (refactor: chat)
 =======
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
+=======
+      // console.log((await userCollection.doc(user.uid).get()).data());
+>>>>>>> eaeef0e (nothing)
       navigation.navigate('BottomTab', {userId: user.uid});
     } catch (e) {
       console.error('로그인 실패:', e);

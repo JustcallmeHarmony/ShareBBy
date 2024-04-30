@@ -61,6 +61,7 @@ const SignUpAddress = ({
 =======
 =======
       });
+<<<<<<< HEAD
 
       // Firebase Storage에서 프로필 이미지 다운로드 URL 가져오기
       const profileImageUrl = await storage()
@@ -123,6 +124,8 @@ const SignUpAddress = ({
         nickname,
         profileImage: profileImageUrl, // Firebase Storage에서 가져온 URL 사용
       });
+=======
+>>>>>>> eaeef0e (nothing)
       Alert.alert('회원가입 성공');
       navigation.navigate('Login');
     } catch (error) {
