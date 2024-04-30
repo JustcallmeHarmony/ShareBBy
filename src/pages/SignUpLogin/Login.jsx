@@ -12,6 +12,7 @@ import {
 import {signIn} from '../../lib/auth';
 import firestore from '@react-native-firebase/firestore';
 
+<<<<<<< HEAD
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import auth from '@react-native-firebase/auth';
 import * as KakaoLogin from '@react-native-seoul/kakao-login';
@@ -25,6 +26,24 @@ const googleIcon = require('../../assets/icons/google.png');
 
 const LoginTitle = require('../../assets/images/LoginTitle.png');
 
+=======
+import {
+  GoogleSignin,
+
+} from '@react-native-google-signin/google-signin';
+import auth from '@react-native-firebase/auth';
+import * as KakaoLogin from '@react-native-seoul/kakao-login';
+import {WEB_CLIENT_ID} from '@env';
+import {NaverLogin} from '@react-native-seoul/naver-login';
+
+const naverIcon = require('../../assets/icons/naver.png');
+const kakaoIcon = require('../../assets/icons/kakao.png');
+const googleIcon = require('../../assets/icons/google.png')
+
+const LoginTitle = require('../../assets/images/LoginTitle.png');
+
+
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
 const Login = ({navigation}) => {
   const [email, setEmail] = useState();
   const [password, setPass] = useState();
@@ -34,6 +53,7 @@ const Login = ({navigation}) => {
 
   const {width, height} = Dimensions.get('window');
 
+<<<<<<< HEAD
   useEffect(() => {
     const initializeNaverLogin = async () => {
       console.log('Initializing Naver Login');
@@ -63,6 +83,24 @@ const Login = ({navigation}) => {
         await getProfiles();
       } else {
         console.log('Naver Login Failed');
+=======
+  // useEffect(() => {
+  //     NaverLogin.init({
+  //       kUrlSampleAppUrlScheme: 'http://ShareBBy.com/login',
+  //       kConsumerKey: '9RPfcXnZ_6q8GOxs3bCi',
+  //       kConsumerSecret: 'xaSokjPvNy',
+  //       kServiceAppName: 'SharBBy',
+  //     });
+  //   }, []);
+
+  const handleNaverLogin = async () => {
+    try {
+      const result = await NaverLogin.login();
+      if (result) {
+        const profile = await getProfile();
+        setUserData(profile);
+      } else {
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
         Alert.alert('네이버 로그인 실패', '네이버 로그인에 실패하였습니다.');
       }
     } catch (error) {
@@ -74,6 +112,7 @@ const Login = ({navigation}) => {
     }
   };
 
+<<<<<<< HEAD
   const getProfiles = async () => {
     try {
       console.log('Fetching Naver Profile');
@@ -136,6 +175,8 @@ const Login = ({navigation}) => {
     }
   };
 
+=======
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
   useEffect(() => {
     const googleSigninConfigure = async () => {
       await GoogleSignin.configure({
@@ -155,10 +196,13 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
 =======
 >>>>>>> c8c80c7 (네이버, 카카오, 구글 파이어베이스 연동)
+=======
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
       const {idToken} = await GoogleSignin.signIn();
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
@@ -207,10 +251,18 @@ const Login = ({navigation}) => {
 =======
       const currentUser = auth().currentUser;
 
+=======
+      const { idToken } = await GoogleSignin.signIn();
+      const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+      await auth().signInWithCredential(googleCredential);
+      const currentUser = auth().currentUser;
+  
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
       // 사용자 정보 가져오기
       const email = currentUser.email;
       const displayName = currentUser.displayName;
       const photoURL = currentUser.photoURL;
+<<<<<<< HEAD
 >>>>>>> b966d85 (refactor: chat)
 
       console.log('구글 사용자 정보:', {
@@ -230,14 +282,37 @@ const Login = ({navigation}) => {
 
       // Main 화면으로 이동
       navigation.navigate('Main', {userId: email, nickname: displayName});
+=======
+  
+      console.log('구글 사용자 정보:', {
+        email: email,
+        displayName: displayName,
+        photoURL: photoURL,
+      });
+  
+      // Firestore에 사용자 정보 저장
+      await firestore().collection('users').doc(currentUser.uid).set({
+        email: email,
+        displayName: displayName,
+        photoURL: photoURL,
+      });
+  
+      // Main 화면으로 이동
+      navigation.navigate('Main');
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
     } catch (error) {
       console.error('구글 로그인 오류:', error);
       Alert.alert('구글 로그인 실패');
     }
   };
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+  
+
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
   const kakaoLogins = () => {
     KakaoLogin.login()
       .then(result => {
@@ -252,6 +327,7 @@ const Login = ({navigation}) => {
         } else {
           console.log(`Login Fail(code:${error.code})`, error.message);
         }
+<<<<<<< HEAD
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
       });
 
@@ -263,6 +339,11 @@ const Login = ({navigation}) => {
         nickName: displayName,
         photoURL: photoURL,
 =======
+=======
+      });
+  };
+
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
   const getProfile = () => {
     KakaoLogin.getProfile()
       .then(result => {
@@ -275,6 +356,7 @@ const Login = ({navigation}) => {
       })
       .catch(error => {
         console.log(`GetProfile Fail(code:${error.code})`, error.message);
+<<<<<<< HEAD
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
       });
 
@@ -846,11 +928,21 @@ const Login = ({navigation}) => {
 >>>>>>> 2551bb1 (refactor: chat)
 >>>>>>> d0fbf71 (refactor: chat)
 =======
+=======
+      });
+  };
+  
+  
+
+  // 로그인
+
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
   // 수정할 때 사용 코드
   // await userCollection.doc(user.uid).update({nickName})
   // console.log((await userCollection.doc(user.uid).get()).data());
   // await userCollection.doc(user.uid).update({phoneNumber})
   // console.log((await userCollection.doc(user.uid).get()).data());
+<<<<<<< HEAD
 <<<<<<< HEAD
   
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
@@ -894,7 +986,13 @@ const Login = ({navigation}) => {
 
 >>>>>>> b966d85 (refactor: chat)
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 >>>>>>> d0fbf71 (refactor: chat)
+=======
+=======
+  
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
   const onSignIn = async () => {
     try {
       const {user} = await signIn({email, password});
@@ -903,6 +1001,9 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
       // console.log((await userCollection.doc(user.uid).get()).data());
 =======
       console.log((await userCollection.doc(user.uid).get()).data());
@@ -917,6 +1018,10 @@ const Login = ({navigation}) => {
       // console.log((await userCollection.doc(user.uid).get()).data());
 >>>>>>> 682853e (nothing)
       navigation.navigate('BottomTab', {userId: user.uid});
+=======
+      console.log((await userCollection.doc(user.uid).get()).data());
+      navigation.navigate('Main', {userId: user.uid});
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
     } catch (e) {
       console.error('로그인 실패:', e);
       Alert.alert('로그인 실패');
@@ -929,7 +1034,13 @@ const Login = ({navigation}) => {
         <Image source={LoginTitle} />
         <View style={styles.titleTextContainer}>
           <View>
+<<<<<<< HEAD
             <Text style={styles.firstTitleText}>당신의 취미를</Text>
+=======
+            <Text style={styles.firstTitleText}>
+              당신의 취미를
+            </Text>
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
           </View>
           <View>
             <Text style={styles.secondTitleText}>함께할 준비가 되셨나요?</Text>
@@ -959,9 +1070,14 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d0fbf71 (refactor: chat)
 =======
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
         {/* <TextInput
                 style={{ height: 40, width: 200, borderColor: 'gray', borderWidth: 1, marginBottom: 10 }}
                 value={displayName}
@@ -974,6 +1090,9 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
 >>>>>>> b966d85 (refactor: chat)
 =======
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
@@ -990,6 +1109,9 @@ const Login = ({navigation}) => {
 >>>>>>> b966d85 (refactor: chat)
 >>>>>>> d0fbf71 (refactor: chat)
         <TouchableOpacity onPress={onSignIn} style={styles.loginButton}>
+=======
+        <TouchableOpacity onPress={() => navigation.navigate('BottomTab')} style={styles.loginButton}>
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
           <Text style={styles.loginButtonText}>로그인</Text>
         </TouchableOpacity>
 
@@ -1105,8 +1227,13 @@ const styles = StyleSheet.create({
   },
   signInButton: {
     borderRadius: 10,
+<<<<<<< HEAD
 
     backgroundColor: '#D7FFF3',
+=======
+   
+    backgroundColor:'#D7FFF3',
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
     flex: 0.12,
     justifyContent: 'center',
     alignItems: 'center',

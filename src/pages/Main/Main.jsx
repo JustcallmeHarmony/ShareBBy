@@ -4,9 +4,13 @@ import { SafeAreaView, View, Text, TouchableOpacity, StyleSheet, ScrollView, Dim
 const { width, height } = Dimensions.get('window');
 
 const Main = ({ navigation, route }) => {
+<<<<<<< HEAD
     console.log(route);
     const [optionClick, setOptionClick] = useState(null);
     // const { userId, nickname } = route.params;
+=======
+    const [optionClick, setOptionClick] = useState(null);
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
 
     const handleOptionClick = (id) => {
         setOptionClick(id);
@@ -75,7 +79,12 @@ const Main = ({ navigation, route }) => {
                         snapToAlignment="start"
                         // onViewableItemsChanged={onViewableItemsChanged}
                         // viewabilityConfig={viewabilityConfig.current}
+<<<<<<< HEAD
                     />            
+=======
+                    />
+                    
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
                 </View>
                 <View style={styles.divisionView} />
                 <View style={{ marginBottom: 20, paddingHorizontal: 16, gap: 6 }}>
@@ -93,6 +102,9 @@ const Main = ({ navigation, route }) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
 =======
@@ -105,6 +117,7 @@ const Main = ({ navigation, route }) => {
                             onPress={() => navigation.navigate('Recruit', route)}>
 >>>>>>> 99c4a90 (nothing)
 =======
+<<<<<<< HEAD
                             onPress={() => navigation.navigate('Recruit', route)}>
 >>>>>>> eaeef0e (nothing)
 =======
@@ -121,6 +134,10 @@ const Main = ({ navigation, route }) => {
                             onPress={() => navigation.navigate('Recruit', route)}>
 >>>>>>> 99c4a90 (nothing)
 >>>>>>> 682853e (nothing)
+=======
+                            onPress={() => navigation.navigate('Recruit')}>
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
                             <Image source={goRecruit} style={{ width: 100, height: 100, marginTop: 'auto' }} />
                             <Text style={styles.hobbyText}>모집하기</Text>
                         </TouchableOpacity>
@@ -176,6 +193,10 @@ const Main = ({ navigation, route }) => {
                                 <Image source={dummyProfileIcon} style={{ width: 36, height: 36 }} />
                                 <Text>이나겸</Text>
                             </View>
+<<<<<<< HEAD
+=======
+
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
                         </View>
                     </View>
                 </View>
@@ -184,7 +205,10 @@ const Main = ({ navigation, route }) => {
         </SafeAreaView>
     )
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
 const dropDownIcon = require('../../assets/icons/dropDownIcon.png');
 const goJoin = require('../../assets/images/goJoin.png');
 const goRecruit = require('../../assets/images/goRecruit.png');
@@ -288,8 +312,11 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 682853e (nothing)
+=======
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
         width: 176, 
         height: 176, 
 =======
@@ -300,6 +327,7 @@ const styles = StyleSheet.create({
         width: 176, 
         height: 176, 
 >>>>>>> eaeef0e (nothing)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         width: 176, 
@@ -315,6 +343,12 @@ const styles = StyleSheet.create({
 >>>>>>> eaeef0e (nothing)
 =======
 >>>>>>> 682853e (nothing)
+=======
+=======
+        width: 176, 
+        height: 176, 
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
         overflow: 'hidden', 
         borderRadius: 15, 
     },

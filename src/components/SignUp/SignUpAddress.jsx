@@ -36,8 +36,11 @@ const SignUpAddress = ({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b34e008 (소셜 로그인 연결 테스트)
+=======
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
       console.log('회원가입 데이터:', {
 =======
       console.log('회원가입 데이터:', { checkboxState, email, password, address, nickname }); 
@@ -57,6 +60,9 @@ const SignUpAddress = ({
 =======
 >>>>>>> b34e008 (소셜 로그인 연결 테스트)
 >>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
+=======
+      console.log('회원가입 데이터:', {
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
         checkboxState,
         email,
         address,
@@ -65,6 +71,9 @@ const SignUpAddress = ({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
 =======
 =======
       });
@@ -113,6 +122,8 @@ const SignUpAddress = ({
         nickname,
         profileImage: profileImageUrl, // Firebase Storage에서 가져온 URL 사용
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
       });
 
       // Firebase Storage에서 프로필 이미지 다운로드 URL 가져오기
@@ -134,8 +145,15 @@ const SignUpAddress = ({
         nickname,
         profileImage: profileImageUrl, // Firebase Storage에서 가져온 URL 사용
       });
+<<<<<<< HEAD
 =======
 >>>>>>> eaeef0e (nothing)
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+>>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
       Alert.alert('회원가입 성공');
       navigation.navigate('Login');
     } catch (error) {
