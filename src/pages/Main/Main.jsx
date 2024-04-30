@@ -115,6 +115,7 @@ const Main = ({ navigation, route }) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
 =======
@@ -123,6 +124,12 @@ const Main = ({ navigation, route }) => {
 =======
 >>>>>>> 092b69b (스타일 시트 정리 및 유저 정보 추가)
 >>>>>>> 35e69c8 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> 092b69b (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> 9d4c889 (nothing)
+>>>>>>> a09cf28 (nothing)
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
 =======
@@ -131,6 +138,7 @@ const Main = ({ navigation, route }) => {
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
                             onPress={() => navigation.navigate('Recruit')}>
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                             onPress={() => navigation.navigate('Recruit', route)}>
@@ -167,7 +175,15 @@ const Main = ({ navigation, route }) => {
 =======
 =======
 >>>>>>> 092b69b (스타일 시트 정리 및 유저 정보 추가)
+<<<<<<< HEAD
 >>>>>>> 35e69c8 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+=======
+                            onPress={() => navigation.navigate('Recruit', route)}>
+>>>>>>> 99c4a90 (nothing)
+>>>>>>> 9d4c889 (nothing)
+>>>>>>> a09cf28 (nothing)
                             <Image source={goRecruit} style={{ width: 100, height: 100, marginTop: 'auto' }} />
                             <Text style={styles.hobbyText}>모집하기</Text>
                         </TouchableOpacity>
