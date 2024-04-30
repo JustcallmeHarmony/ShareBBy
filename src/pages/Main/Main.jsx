@@ -87,10 +87,14 @@ const Main = ({ navigation, route }) => {
                         <TouchableOpacity activeOpacity={0.8}
                             style={[styles.hobbyBox, {backgroundColor : '#703CA0'}]}
 <<<<<<< HEAD
+<<<<<<< HEAD
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
                             onPress={() => navigation.navigate('Recruit')}>
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
+=======
+                            onPress={() => navigation.navigate('Recruit', route)}>
+>>>>>>> 99c4a90 (nothing)
                             <Image source={goRecruit} style={{ width: 100, height: 100, marginTop: 'auto' }} />
                             <Text style={styles.hobbyText}>모집하기</Text>
                         </TouchableOpacity>
