@@ -28,10 +28,14 @@ target 'HobbyShare' do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
   pod 'naveridlogin-sdk-ios'
 
 =======
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
+<<<<<<< HEAD
 =======
   pod 'naveridlogin-sdk-ios'
 
@@ -42,6 +46,8 @@ target 'HobbyShare' do
   pod 'naveridlogin-sdk-ios'
 
 >>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
+=======
+>>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
 
   use_frameworks! :linkage => :static
   use_react_native!(

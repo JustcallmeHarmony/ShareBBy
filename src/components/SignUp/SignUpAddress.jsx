@@ -58,6 +58,7 @@ const SignUpAddress = ({
         profileImageUrl,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
       });
@@ -82,6 +83,9 @@ const SignUpAddress = ({
         nickname,
         profileImage: profileImageUrl, // Firebase Storage에서 가져온 URL 사용
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
       });
 
       // Firebase Storage에서 프로필 이미지 다운로드 URL 가져오기

@@ -91,6 +91,7 @@ const Main = ({ navigation, route }) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
 =======
@@ -105,6 +106,12 @@ const Main = ({ navigation, route }) => {
 =======
                             onPress={() => navigation.navigate('Recruit', route)}>
 >>>>>>> eaeef0e (nothing)
+=======
+                            onPress={() => navigation.navigate('Recruit', route)}>
+=======
+                            onPress={() => navigation.navigate('Recruit')}>
+>>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
+>>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
                             <Image source={goRecruit} style={{ width: 100, height: 100, marginTop: 'auto' }} />
                             <Text style={styles.hobbyText}>모집하기</Text>
                         </TouchableOpacity>

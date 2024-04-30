@@ -153,6 +153,9 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
       const {idToken} = await GoogleSignin.signIn();
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
@@ -178,14 +181,77 @@ const Login = ({navigation}) => {
         email: email,
         nickName: displayName,
         photoURL: photoURL,
+=======
+      const { idToken } = await GoogleSignin.signIn();
+      const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+      await auth().signInWithCredential(googleCredential);
+      const currentUser = auth().currentUser;
+  
+      // 사용자 정보 가져오기
+      const email = currentUser.email;
+      const displayName = currentUser.displayName;
+      const photoURL = currentUser.photoURL;
+  
+      console.log('구글 사용자 정보:', {
+        email: email,
+        displayName: displayName,
+        photoURL: photoURL,
+      });
+  
+      // Firestore에 사용자 정보 저장
+      await firestore().collection('users').doc(currentUser.uid).set({
+        email: email,
+        displayName: displayName,
+        photoURL: photoURL,
+      });
+  
+      // Main 화면으로 이동
+      navigation.navigate('Main');
+    } catch (error) {
+      console.error('구글 로그인 오류:', error);
+      Alert.alert('구글 로그인 실패');
+    }
+  };
+  
+
+  const kakaoLogins = () => {
+    KakaoLogin.login()
+      .then(result => {
+        console.log('Login Success', JSON.stringify(result));
+        getProfile();
+
+
+      })
+      .catch(error => {
+        if (error.code === 'E_CANCELLED_OPERATION') {
+          console.log('Login Cancel', error.message);
+        } else {
+          console.log(`Login Fail(code:${error.code})`, error.message);
+        }
+>>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
       });
 
+<<<<<<< HEAD
       // Firestore에 사용자 정보 저장
       await firestore().collection('users').doc(user.uid).set({
         id: user.uid,
         email: email,
         nickName: displayName,
         photoURL: photoURL,
+=======
+  const getProfile = () => {
+    KakaoLogin.getProfile()
+      .then(result => {
+        console.log('GetProfile Success', JSON.stringify(result));
+        const email = result.email;
+        const nickName = result.nickname;
+        console.log('이메일:', email);
+        console.log('닉네임:', nickName);
+        navigation.navigate('Main', { userId: email, nickname: nickName });
+      })
+      .catch(error => {
+        console.log(`GetProfile Fail(code:${error.code})`, error.message);
+>>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
       });
 
       // Main 화면으로 이동
@@ -196,8 +262,13 @@ const Login = ({navigation}) => {
     }
   };
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 >>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
+=======
+  
+  
+>>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
 
 >>>>>>> 18e65b1 (refactor: chat)
       const user = auth().user;
@@ -435,6 +506,7 @@ const Login = ({navigation}) => {
 
 =======
 
+<<<<<<< HEAD
   const kakaoLogins = async () => {
     try {
       const result = await KakaoLogin.login();
@@ -643,6 +715,7 @@ const Login = ({navigation}) => {
     }
   };
 
+<<<<<<< HEAD
 >>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
 <<<<<<< HEAD
 >>>>>>> e6d36e5 (네이버, 카카오, 구글 파이어베이스 연동)
@@ -683,6 +756,16 @@ const Login = ({navigation}) => {
 =======
 
 >>>>>>> b966d85 (refactor: chat)
+=======
+=======
+  // 수정할 때 사용 코드
+  // await userCollection.doc(user.uid).update({nickName})
+  // console.log((await userCollection.doc(user.uid).get()).data());
+  // await userCollection.doc(user.uid).update({phoneNumber})
+  // console.log((await userCollection.doc(user.uid).get()).data());
+  
+>>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
+>>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
   const onSignIn = async () => {
     try {
       const {user} = await signIn({email, password});
