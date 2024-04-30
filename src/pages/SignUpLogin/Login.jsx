@@ -692,7 +692,10 @@ const Login = ({navigation}) => {
       // console.log((await userCollection.doc(user.uid).get()).data());
 =======
       console.log((await userCollection.doc(user.uid).get()).data());
+<<<<<<< HEAD
 >>>>>>> b966d85 (refactor: chat)
+=======
+>>>>>>> 1bf1bf6 (fix : stylesSheet fix)
       navigation.navigate('BottomTab', {userId: user.uid});
     } catch (e) {
       console.error('로그인 실패:', e);
@@ -746,6 +749,7 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b966d85 (refactor: chat)
 =======
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
@@ -756,6 +760,8 @@ const Login = ({navigation}) => {
 >>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
 =======
 >>>>>>> b966d85 (refactor: chat)
+=======
+>>>>>>> 1bf1bf6 (fix : stylesSheet fix)
         <TouchableOpacity onPress={onSignIn} style={styles.loginButton}>
           <Text style={styles.loginButtonText}>로그인</Text>
         </TouchableOpacity>

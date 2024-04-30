@@ -89,10 +89,13 @@ const Main = ({ navigation, route }) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
 =======
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> 1bf1bf6 (fix : stylesSheet fix)
                             onPress={() => navigation.navigate('Recruit')}>
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
 =======
@@ -262,6 +265,7 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         width: 176, 
         height: 176, 
 =======
@@ -276,6 +280,10 @@ const styles = StyleSheet.create({
         width: 176, 
         height: 176, 
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
+=======
+        width: 170, 
+        height: 170, 
+>>>>>>> 1bf1bf6 (fix : stylesSheet fix)
         overflow: 'hidden', 
         borderRadius: 15, 
     },
