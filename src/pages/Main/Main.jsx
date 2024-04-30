@@ -248,8 +248,13 @@ const styles = StyleSheet.create({
         gap: 10 
     },
     hobbyBox : {
+<<<<<<< HEAD
         width: 176, 
         height: 176, 
+=======
+        width: 170, 
+        height: 170, 
+>>>>>>> 1bf1bf6 (fix : stylesSheet fix)
         overflow: 'hidden', 
         borderRadius: 15, 
     },

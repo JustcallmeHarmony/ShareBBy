@@ -356,7 +356,10 @@ const Login = ({navigation}) => {
                 onChangeText={setName}
             /> */}
 
+<<<<<<< HEAD
 >>>>>>> b966d85 (refactor: chat)
+=======
+>>>>>>> 1bf1bf6 (fix : stylesSheet fix)
         <TouchableOpacity onPress={onSignIn} style={styles.loginButton}>
           <Text style={styles.loginButtonText}>로그인</Text>
         </TouchableOpacity>
