@@ -2490,6 +2490,7 @@ DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
+  - Firebase/Storage
   - FirebaseAuth
   - FirebaseFirestore
   - fmt (from `../node_modules/react-native/third-party-podspecs/fmt.podspec`)
@@ -2844,9 +2845,8 @@ SPEC CHECKSUMS:
   RNNaverLogin: af12cf085682b1160609505f2554c78c5a364b9b
   RNScreens: cfe03c0356f5d19e1f04e45b7e2ff6edd92fe6e1
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
-  TOCropViewController: b9b2905938c0424f289ea2d9964993044913fac6
   Yoga: 3f9165051bbc60b66f6a88c5eeafd9e9faa29500
 
-PODFILE CHECKSUM: 00859281f23d497cafcc5dd895e43d7ee9ade6bb
+PODFILE CHECKSUM: b4bae90d5aa4b6543f82ee95ea7448bf2a617686
 
 COCOAPODS: 1.15.2
