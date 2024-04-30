@@ -316,16 +316,22 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 682853e (nothing)
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> a706a9d (fix : stylesSheet fix)
+>>>>>>> 0b68d54 (fix : stylesSheet fix)
         width: 176, 
         height: 176, 
 =======
         width: 170, 
         height: 170, 
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
+<<<<<<< HEAD
 =======
         width: 176, 
         height: 176, 
@@ -351,7 +357,12 @@ const styles = StyleSheet.create({
         width: 176, 
         height: 176, 
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+<<<<<<< HEAD
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> a706a9d (fix : stylesSheet fix)
+>>>>>>> 0b68d54 (fix : stylesSheet fix)
         overflow: 'hidden', 
         borderRadius: 15, 
     },

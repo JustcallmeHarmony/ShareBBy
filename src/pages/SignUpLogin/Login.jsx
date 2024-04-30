@@ -1256,10 +1256,13 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
 =======
 >>>>>>> 89ed0ac (refactor: chat)
+=======
+>>>>>>> 0b68d54 (fix : stylesSheet fix)
 >>>>>>> b966d85 (refactor: chat)
 =======
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
@@ -1278,7 +1281,15 @@ const Login = ({navigation}) => {
 >>>>>>> d0fbf71 (refactor: chat)
 =======
 >>>>>>> 65c8b3d (refactor: chat)
+<<<<<<< HEAD
 >>>>>>> 89ed0ac (refactor: chat)
+=======
+=======
+>>>>>>> b966d85 (refactor: chat)
+=======
+>>>>>>> 1bf1bf6 (fix : stylesSheet fix)
+>>>>>>> a706a9d (fix : stylesSheet fix)
+>>>>>>> 0b68d54 (fix : stylesSheet fix)
         <TouchableOpacity onPress={onSignIn} style={styles.loginButton}>
 =======
         <TouchableOpacity onPress={() => navigation.navigate('BottomTab')} style={styles.loginButton}>
