@@ -92,6 +92,7 @@ const Main = ({ navigation, route }) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
 =======
@@ -107,11 +108,19 @@ const Main = ({ navigation, route }) => {
                             onPress={() => navigation.navigate('Recruit', route)}>
 >>>>>>> eaeef0e (nothing)
 =======
+=======
+>>>>>>> 682853e (nothing)
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
                             onPress={() => navigation.navigate('Recruit')}>
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
+<<<<<<< HEAD
 >>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+                            onPress={() => navigation.navigate('Recruit', route)}>
+>>>>>>> 99c4a90 (nothing)
+>>>>>>> 682853e (nothing)
                             <Image source={goRecruit} style={{ width: 100, height: 100, marginTop: 'auto' }} />
                             <Text style={styles.hobbyText}>모집하기</Text>
                         </TouchableOpacity>
@@ -278,6 +287,9 @@ const styles = StyleSheet.create({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 682853e (nothing)
         width: 176, 
         height: 176, 
 =======
@@ -288,6 +300,7 @@ const styles = StyleSheet.create({
         width: 176, 
         height: 176, 
 >>>>>>> eaeef0e (nothing)
+<<<<<<< HEAD
 =======
         width: 176, 
         height: 176, 
@@ -300,6 +313,8 @@ const styles = StyleSheet.create({
         width: 176, 
         height: 176, 
 >>>>>>> eaeef0e (nothing)
+=======
+>>>>>>> 682853e (nothing)
         overflow: 'hidden', 
         borderRadius: 15, 
     },
