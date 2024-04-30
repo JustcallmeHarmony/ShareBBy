@@ -24,8 +24,11 @@ target 'HobbyShare' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'Firebase/Storage'
+<<<<<<< HEAD
   pod 'naveridlogin-sdk-ios'
 
+=======
+>>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
 
   use_frameworks! :linkage => :static
   use_react_native!(

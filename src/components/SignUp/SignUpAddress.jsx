@@ -49,6 +49,29 @@ const SignUpAddress = ({
         address,
         nickname,
         profileImageUrl,
+<<<<<<< HEAD
+=======
+      });
+
+      // Firebase Storage에서 프로필 이미지 다운로드 URL 가져오기
+      const profileImageUrl = await storage()
+        .ref('dummyprofile.png') // Storage 경로 지정
+        .getDownloadURL();
+
+      // 회원 생성 및 Firestore에 저장
+      const userCredential = await auth().createUserWithEmailAndPassword(
+        email,
+        password,
+      );
+      const user = userCredential.user;
+      await firestore().collection('users').doc(user.uid).set({
+        id: user.uid,
+        checkboxState,
+        email,
+        address,
+        nickname,
+        profileImage: profileImageUrl, // Firebase Storage에서 가져온 URL 사용
+>>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
       });
 
       // Firebase Storage에서 프로필 이미지 다운로드 URL 가져오기
