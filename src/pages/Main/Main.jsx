@@ -88,8 +88,11 @@ const Main = ({ navigation, route }) => {
                             style={[styles.hobbyBox, {backgroundColor : '#703CA0'}]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             onPress={() => navigation.navigate('Recruit', route)}>
 =======
+=======
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
                             onPress={() => navigation.navigate('Recruit')}>
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
 =======
@@ -258,6 +261,7 @@ const styles = StyleSheet.create({
     hobbyBox : {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         width: 176, 
         height: 176, 
 =======
@@ -268,6 +272,10 @@ const styles = StyleSheet.create({
         width: 176, 
         height: 176, 
 >>>>>>> eaeef0e (nothing)
+=======
+        width: 176, 
+        height: 176, 
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
         overflow: 'hidden', 
         borderRadius: 15, 
     },

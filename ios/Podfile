@@ -26,6 +26,7 @@ target 'HobbyShare' do
   pod 'Firebase/Storage'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   pod 'naveridlogin-sdk-ios'
 
 =======
@@ -34,6 +35,8 @@ target 'HobbyShare' do
   pod 'naveridlogin-sdk-ios'
 
 >>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
+=======
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
 
   use_frameworks! :linkage => :static
   use_react_native!(

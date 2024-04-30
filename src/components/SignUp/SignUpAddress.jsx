@@ -34,6 +34,7 @@ const SignUpAddress = ({
     try {
       // Firebase를 사용하여 회원가입 처리
 <<<<<<< HEAD
+<<<<<<< HEAD
       console.log('회원가입 데이터:', {
 =======
       console.log('회원가입 데이터:', { checkboxState, email, password, address, nickname }); 
@@ -44,13 +45,39 @@ const SignUpAddress = ({
       await firestore().collection('users').doc(user.uid).set({
         id: user.uid,
 >>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
+=======
+      console.log('회원가입 데이터:', {
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
         checkboxState,
         email,
         address,
         nickname,
         profileImageUrl,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+      });
+
+      // Firebase Storage에서 프로필 이미지 다운로드 URL 가져오기
+      const profileImageUrl = await storage()
+        .ref('dummyprofile.png') // Storage 경로 지정
+        .getDownloadURL();
+
+      // 회원 생성 및 Firestore에 저장
+      const userCredential = await auth().createUserWithEmailAndPassword(
+        email,
+        password,
+      );
+      const user = userCredential.user;
+      await firestore().collection('users').doc(user.uid).set({
+        id: user.uid,
+        checkboxState,
+        email,
+        address,
+        nickname,
+        profileImage: profileImageUrl, // Firebase Storage에서 가져온 URL 사용
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
       });
 
       // Firebase Storage에서 프로필 이미지 다운로드 URL 가져오기

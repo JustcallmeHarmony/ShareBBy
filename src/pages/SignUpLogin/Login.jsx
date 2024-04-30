@@ -149,6 +149,7 @@ const Login = ({navigation}) => {
     try {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       const {idToken} = await GoogleSignin.signIn();
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
@@ -196,10 +197,18 @@ const Login = ({navigation}) => {
 =======
       const currentUser = auth().currentUser;
 
+=======
+      const { idToken } = await GoogleSignin.signIn();
+      const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+      await auth().signInWithCredential(googleCredential);
+      const currentUser = auth().currentUser;
+  
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
       // 사용자 정보 가져오기
       const email = currentUser.email;
       const displayName = currentUser.displayName;
       const photoURL = currentUser.photoURL;
+<<<<<<< HEAD
 >>>>>>> b966d85 (refactor: chat)
 
       console.log('구글 사용자 정보:', {
@@ -219,11 +228,30 @@ const Login = ({navigation}) => {
 
       // Main 화면으로 이동
       navigation.navigate('Main', {userId: email, nickname: displayName});
+=======
+  
+      console.log('구글 사용자 정보:', {
+        email: email,
+        displayName: displayName,
+        photoURL: photoURL,
+      });
+  
+      // Firestore에 사용자 정보 저장
+      await firestore().collection('users').doc(currentUser.uid).set({
+        email: email,
+        displayName: displayName,
+        photoURL: photoURL,
+      });
+  
+      // Main 화면으로 이동
+      navigation.navigate('Main');
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
     } catch (error) {
       console.error('구글 로그인 오류:', error);
       Alert.alert('구글 로그인 실패');
     }
   };
+  
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -378,6 +406,11 @@ const Login = ({navigation}) => {
       .then(result => {
         console.log('Login Success', JSON.stringify(result));
         getProfile();
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
       })
       .catch(error => {
         if (error.code === 'E_CANCELLED_OPERATION') {
@@ -417,7 +450,11 @@ const Login = ({navigation}) => {
         const nickName = result.nickname;
         console.log('이메일:', email);
         console.log('닉네임:', nickName);
+<<<<<<< HEAD
         navigation.navigate('Main', {userId: email, nickname: nickName});
+=======
+        navigation.navigate('Main', { userId: email, nickname: nickName });
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
       })
       .catch(error => {
         console.log(`GetProfile Fail(code:${error.code})`, error.message);
@@ -428,6 +465,8 @@ const Login = ({navigation}) => {
 >>>>>>> 2551bb1 (refactor: chat)
 >>>>>>> 18e65b1 (refactor: chat)
   };
+  
+  
 
   const registerKakaoUser = async profile => {
     try {
@@ -473,6 +512,7 @@ const Login = ({navigation}) => {
   // console.log((await userCollection.doc(user.uid).get()).data());
   // await userCollection.doc(user.uid).update({phoneNumber})
   // console.log((await userCollection.doc(user.uid).get()).data());
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -523,6 +563,9 @@ const Login = ({navigation}) => {
 >>>>>>> b966d85 (refactor: chat)
 >>>>>>> 2551bb1 (refactor: chat)
 >>>>>>> 18e65b1 (refactor: chat)
+=======
+  
+>>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
   const onSignIn = async () => {
     try {
       const {user} = await signIn({email, password});
