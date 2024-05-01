@@ -2496,6 +2496,7 @@ PODS:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
@@ -2510,12 +2511,15 @@ PODS:
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
 =======
 >>>>>>> d0fbf71 (refactor: chat)
+=======
+>>>>>>> 710c362 (refactor: chat)
   - RNGestureHandler (2.16.0):
 =======
   - RNFBStorage (19.2.2):
     - Firebase/Storage (= 10.24.0)
     - React-Core
     - RNFBApp
+<<<<<<< HEAD
   - RNFBStorage (19.2.2):
     - Firebase/Storage (= 10.24.0)
     - React-Core
@@ -2565,6 +2569,10 @@ PODS:
 =======
   - RNGestureHandler (2.16.1):
 >>>>>>> 89ed0ac (refactor: chat)
+=======
+  - RNGestureHandler (2.16.1):
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> 710c362 (refactor: chat)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2588,6 +2596,7 @@ PODS:
   - RNGoogleSignin (11.0.1):
     - GoogleSignIn (~> 7.0.0)
     - React-Core
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2648,6 +2657,11 @@ PODS:
 =======
 =======
 >>>>>>> e6aeb1f (네이버, 카카오, 구글 파이어베이스 연동)
+=======
+=======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> 710c362 (refactor: chat)
 <<<<<<< HEAD
   - RNImageCropPicker (0.40.3):
     - React-Core
@@ -2663,6 +2677,7 @@ PODS:
 =======
   - RNNaverLogin (4.0.0):
 >>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2723,6 +2738,11 @@ PODS:
 >>>>>>> e4b13fc (네이버, 카카오, 구글 파이어베이스 연동)
 =======
 >>>>>>> e6aeb1f (네이버, 카카오, 구글 파이어베이스 연동)
+=======
+=======
+  - RNNaverLogin (4.0.0):
+>>>>>>> b966d85 (refactor: chat)
+>>>>>>> 710c362 (refactor: chat)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -3236,12 +3256,15 @@ SPEC CHECKSUMS:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
 <<<<<<< HEAD
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
 =======
 >>>>>>> d0fbf71 (refactor: chat)
+=======
+>>>>>>> 710c362 (refactor: chat)
   RNGestureHandler: 72574cf7d3910bdbdf8136c1caf70cd45ede9d9f
   RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
 <<<<<<< HEAD
@@ -3263,6 +3286,12 @@ SPEC CHECKSUMS:
 =======
 =======
 =======
+=======
+  RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
+  RNGestureHandler: ad030559c93b4fa018c35e84466021a03a71198c
+  RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
+<<<<<<< HEAD
+>>>>>>> 2551bb1 (refactor: chat)
 <<<<<<< HEAD
 =======
   RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
@@ -3290,6 +3319,7 @@ SPEC CHECKSUMS:
 =======
   RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
   RNScreens: 30249f9331c3b00ae7cb7922e11f58b3ed369c07
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> b966d85 (refactor: chat)
 <<<<<<< HEAD
@@ -3319,6 +3349,10 @@ SPEC CHECKSUMS:
 >>>>>>> 6af1d08 (first)
 >>>>>>> b85da3a (first)
 >>>>>>> 3a583e2 (first)
+=======
+>>>>>>> b966d85 (refactor: chat)
+>>>>>>> 18e65b1 (refactor: chat)
+>>>>>>> 710c362 (refactor: chat)
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
 <<<<<<< HEAD
   TOCropViewController: b9b2905938c0424f289ea2d9964993044913fac6

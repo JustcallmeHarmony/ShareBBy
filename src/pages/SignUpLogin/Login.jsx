@@ -251,6 +251,7 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
       const { idToken } = await GoogleSignin.signIn();
@@ -267,6 +268,16 @@ const Login = ({navigation}) => {
 =======
 >>>>>>> 65c8b3d (refactor: chat)
 >>>>>>> 89ed0ac (refactor: chat)
+=======
+
+=======
+>>>>>>> 65c8b3d (refactor: chat)
+=======
+=======
+
+>>>>>>> 18e65b1 (refactor: chat)
+>>>>>>> 7d5fa6a (refactor: chat)
+>>>>>>> 710c362 (refactor: chat)
       const user = auth().user;
 
       // 사용자 정보 가져오기
@@ -341,12 +352,23 @@ const Login = ({navigation}) => {
 >>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
+=======
+<<<<<<< HEAD
+>>>>>>> 2551bb1 (refactor: chat)
       const user = auth().user;
 
       // 사용자 정보 가져오기
       const email = user.email;
       const displayName = user.displayName;
       const photoURL = user.photoURL;
+=======
+      const currentUser = auth().currentUser;
+
+      // 사용자 정보 가져오기
+      const email = currentUser.email;
+      const displayName = currentUser.displayName;
+      const photoURL = currentUser.photoURL;
+>>>>>>> b966d85 (refactor: chat)
 
 >>>>>>> 8459bea (네이버, 카카오, 구글 파이어베이스 연동)
       console.log('구글 사용자 정보:', {
@@ -372,6 +394,7 @@ const Login = ({navigation}) => {
     }
   };
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   const kakaoLogins = () => {
     KakaoLogin.login()
@@ -860,7 +883,12 @@ const Login = ({navigation}) => {
 
 >>>>>>> d703c7a (스타일 시트 정리 및 유저 정보 추가)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 092b69b (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> 7d5fa6a (refactor: chat)
   const kakaoLogins = async () => {
     try {
       const result = await KakaoLogin.login();
@@ -908,6 +936,7 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   const kakaoLogins = () => {
     KakaoLogin.login()
@@ -965,10 +994,14 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 =======
 >>>>>>> 89ed0ac (refactor: chat)
+=======
+>>>>>>> 710c362 (refactor: chat)
 
 =======
 =======
 >>>>>>> 65c8b3d (refactor: chat)
+=======
+>>>>>>> 7d5fa6a (refactor: chat)
 =======
   const kakaoLogins = () => {
     KakaoLogin.login()
@@ -985,6 +1018,29 @@ const Login = ({navigation}) => {
       });
   };
 
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+
+=======
+=======
+  const kakaoLogins = () => {
+    KakaoLogin.login()
+      .then(result => {
+        console.log('Login Success', JSON.stringify(result));
+        getProfile();
+      })
+      .catch(error => {
+        if (error.code === 'E_CANCELLED_OPERATION') {
+          console.log('Login Cancel', error.message);
+        } else {
+          console.log(`Login Fail(code:${error.code})`, error.message);
+        }
+      });
+  };
+
+>>>>>>> 710c362 (refactor: chat)
 >>>>>>> 18e65b1 (refactor: chat)
   const getProfile = () => {
     KakaoLogin.getProfile()
@@ -1008,6 +1064,7 @@ const Login = ({navigation}) => {
         console.log(`GetProfile Fail(code:${error.code})`, error.message);
       });
 >>>>>>> b966d85 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1020,6 +1077,16 @@ const Login = ({navigation}) => {
 =======
 >>>>>>> 65c8b3d (refactor: chat)
 >>>>>>> 89ed0ac (refactor: chat)
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+=======
+>>>>>>> 65c8b3d (refactor: chat)
+=======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> 18e65b1 (refactor: chat)
+>>>>>>> 7d5fa6a (refactor: chat)
+>>>>>>> 710c362 (refactor: chat)
   };
 
   const registerKakaoUser = async profile => {
@@ -1114,6 +1181,7 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
 <<<<<<< HEAD
 >>>>>>> e6d36e5 (네이버, 카카오, 구글 파이어베이스 연동)
@@ -1158,9 +1226,12 @@ const Login = ({navigation}) => {
 =======
 =======
 =======
+>>>>>>> 710c362 (refactor: chat)
+=======
 >>>>>>> d703c7a (스타일 시트 정리 및 유저 정보 추가)
 >>>>>>> 35e69c8 (스타일 시트 정리 및 유저 정보 추가)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 2551bb1 (refactor: chat)
@@ -1228,11 +1299,19 @@ const Login = ({navigation}) => {
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
 =======
 >>>>>>> 65c8b3d (refactor: chat)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> 18e65b1 (refactor: chat)
+=======
+>>>>>>> 7d5fa6a (refactor: chat)
   // 수정할 때 사용 코드
   // await userCollection.doc(user.uid).update({nickName})
   // console.log((await userCollection.doc(user.uid).get()).data());
   // await userCollection.doc(user.uid).update({phoneNumber})
   // console.log((await userCollection.doc(user.uid).get()).data());
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1301,9 +1380,13 @@ const Login = ({navigation}) => {
 >>>>>>> 89ed0ac (refactor: chat)
 =======
 =======
+=======
+>>>>>>> 7d5fa6a (refactor: chat)
 
 >>>>>>> b966d85 (refactor: chat)
 =======
+=======
+>>>>>>> 18e65b1 (refactor: chat)
   
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
 <<<<<<< HEAD
@@ -1345,9 +1428,22 @@ const Login = ({navigation}) => {
   };
 
 >>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
+<<<<<<< HEAD
 >>>>>>> e6d36e5 (네이버, 카카오, 구글 파이어베이스 연동)
+<<<<<<< HEAD
 >>>>>>> 8459bea (네이버, 카카오, 구글 파이어베이스 연동)
+<<<<<<< HEAD
 >>>>>>> e6aeb1f (네이버, 카카오, 구글 파이어베이스 연동)
+=======
+=======
+=======
+=======
+
+>>>>>>> b966d85 (refactor: chat)
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> 18e65b1 (refactor: chat)
+>>>>>>> 7d5fa6a (refactor: chat)
+>>>>>>> 710c362 (refactor: chat)
   const onSignIn = async () => {
     try {
       const {user} = await signIn({email, password});
@@ -1470,17 +1566,23 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
 =======
 >>>>>>> 89ed0ac (refactor: chat)
 =======
 >>>>>>> 0b68d54 (fix : stylesSheet fix)
+=======
+=======
+>>>>>>> 7d5fa6a (refactor: chat)
+>>>>>>> 710c362 (refactor: chat)
 >>>>>>> b966d85 (refactor: chat)
 =======
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
 =======
 >>>>>>> b966d85 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -1493,6 +1595,8 @@ const Login = ({navigation}) => {
 >>>>>>> b966d85 (refactor: chat)
 >>>>>>> d0fbf71 (refactor: chat)
 =======
+=======
+>>>>>>> 710c362 (refactor: chat)
 >>>>>>> 65c8b3d (refactor: chat)
 <<<<<<< HEAD
 >>>>>>> 89ed0ac (refactor: chat)
@@ -1502,7 +1606,13 @@ const Login = ({navigation}) => {
 =======
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
 >>>>>>> a706a9d (fix : stylesSheet fix)
+<<<<<<< HEAD
 >>>>>>> 0b68d54 (fix : stylesSheet fix)
+=======
+=======
+>>>>>>> 18e65b1 (refactor: chat)
+>>>>>>> 7d5fa6a (refactor: chat)
+>>>>>>> 710c362 (refactor: chat)
         <TouchableOpacity onPress={onSignIn} style={styles.loginButton}>
 =======
         <TouchableOpacity onPress={() => navigation.navigate('BottomTab')} style={styles.loginButton}>
