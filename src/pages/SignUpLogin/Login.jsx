@@ -13,6 +13,7 @@ import {signIn} from '../../lib/auth';
 import firestore from '@react-native-firebase/firestore';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import auth from '@react-native-firebase/auth';
 import * as KakaoLogin from '@react-native-seoul/kakao-login';
@@ -31,19 +32,26 @@ import {
   GoogleSignin,
 
 } from '@react-native-google-signin/google-signin';
+=======
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
 import auth from '@react-native-firebase/auth';
 import * as KakaoLogin from '@react-native-seoul/kakao-login';
 import {WEB_CLIENT_ID} from '@env';
-import {NaverLogin} from '@react-native-seoul/naver-login';
+import NaverLogin from '@react-native-seoul/naver-login';
+import storage from '@react-native-firebase/storage'; // Firebase Storage 추가
 
 const naverIcon = require('../../assets/icons/naver.png');
 const kakaoIcon = require('../../assets/icons/kakao.png');
-const googleIcon = require('../../assets/icons/google.png')
+const googleIcon = require('../../assets/icons/google.png');
 
 const LoginTitle = require('../../assets/images/LoginTitle.png');
 
+<<<<<<< HEAD
 
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
 const Login = ({navigation}) => {
   const [email, setEmail] = useState();
   const [password, setPass] = useState();
@@ -54,6 +62,9 @@ const Login = ({navigation}) => {
   const {width, height} = Dimensions.get('window');
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
   useEffect(() => {
     const initializeNaverLogin = async () => {
       console.log('Initializing Naver Login');
@@ -72,6 +83,7 @@ const Login = ({navigation}) => {
     };
     initializeNaverLogin();
   }, []);
+<<<<<<< HEAD
 
   const handleNaverLogin = async () => {
     try {
@@ -92,15 +104,23 @@ const Login = ({navigation}) => {
   //       kServiceAppName: 'SharBBy',
   //     });
   //   }, []);
+=======
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
 
   const handleNaverLogin = async () => {
     try {
+      console.log('Attempting Naver Login');
       const result = await NaverLogin.login();
+      console.log('Naver Login Result:', result);
       if (result) {
-        const profile = await getProfile();
-        setUserData(profile);
+        console.log('Naver Login Success');
+        await getProfiles();
       } else {
+<<<<<<< HEAD
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+        console.log('Naver Login Failed');
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
         Alert.alert('네이버 로그인 실패', '네이버 로그인에 실패하였습니다.');
       }
     } catch (error) {
@@ -113,6 +133,9 @@ const Login = ({navigation}) => {
   };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
   const getProfiles = async () => {
     try {
       console.log('Fetching Naver Profile');
@@ -175,8 +198,11 @@ const Login = ({navigation}) => {
     }
   };
 
+<<<<<<< HEAD
 =======
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
   useEffect(() => {
     const googleSigninConfigure = async () => {
       await GoogleSignin.configure({
@@ -197,12 +223,15 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b6b48f6 (스타일 시트 정리 및 유저 정보 추가)
 =======
 >>>>>>> c8c80c7 (네이버, 카카오, 구글 파이어베이스 연동)
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> e4b13fc (네이버, 카카오, 구글 파이어베이스 연동)
       const {idToken} = await GoogleSignin.signIn();
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
@@ -284,27 +313,46 @@ const Login = ({navigation}) => {
       navigation.navigate('Main', {userId: email, nickname: displayName});
 =======
   
+=======
+      const {idToken} = await GoogleSignin.signIn();
+      const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+      await auth().signInWithCredential(googleCredential);
+      const user = auth().user;
+
+      // 사용자 정보 가져오기
+      const email = user.email;
+      const displayName = user.displayName;
+      const photoURL = user.photoURL;
+
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
       console.log('구글 사용자 정보:', {
+        id: user.uid, // 유저 ID 사용
         email: email,
-        displayName: displayName,
+        nickName: displayName,
         photoURL: photoURL,
       });
-  
+
       // Firestore에 사용자 정보 저장
-      await firestore().collection('users').doc(currentUser.uid).set({
+      await firestore().collection('users').doc(user.uid).set({
+        id: user.uid,
         email: email,
-        displayName: displayName,
+        nickName: displayName,
         photoURL: photoURL,
       });
-  
+
       // Main 화면으로 이동
+<<<<<<< HEAD
       navigation.navigate('Main');
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+      navigation.navigate('Main', {userId: email, nickname: displayName});
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
     } catch (error) {
       console.error('구글 로그인 오류:', error);
       Alert.alert('구글 로그인 실패');
     }
   };
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -366,6 +414,9 @@ const Login = ({navigation}) => {
       console.error('구글 로그인 오류:', error);
       Alert.alert('구글 로그인 실패');
 =======
+=======
+
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
   const kakaoLogins = async () => {
     try {
       const result = await KakaoLogin.login();
@@ -384,6 +435,7 @@ const Login = ({navigation}) => {
         '카카오 로그인 중 오류가 발생했습니다.',
       );
     }
+<<<<<<< HEAD
   };
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -930,12 +982,63 @@ const Login = ({navigation}) => {
 =======
 =======
       });
+=======
   };
-  
-  
 
-  // 로그인
+  const getKakaoProfile = async () => {
+    try {
+      console.log('Fetching Kakao Profile');
+      const profile = await KakaoLogin.getProfile();
+      console.log('Kakao Profile:', profile);
+      if (profile) {
+        console.log('Kakao Profile Success');
+        await registerKakaoUser(profile);
+      } else {
+        console.log('Failed to get Kakao profile');
+        Alert.alert(
+          '카카오 프로필 정보 가져오기 실패',
+          '카카오 프로필 정보를 가져오는 데 실패했습니다.',
+        );
+      }
+    } catch (error) {
+      console.error('Failed to get Kakao profile:', error);
+      Alert.alert(
+        '카카오 프로필 정보 가져오기 오류',
+        '카카오 프로필 정보를 가져오는 데 오류가 발생했습니다.',
+      );
+    }
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
+  };
 
+  const registerKakaoUser = async profile => {
+    try {
+      // Firebase Authentication에 사용자 등록
+      const {user} = await auth().createUserWithEmailAndPassword(
+        `${profile.email}`,
+        'temporary_password',
+      );
+      console.log('Firebase Auth User:', user);
+
+      // Firestore에 사용자 정보 저장
+      await firestore().collection('users').doc(user.uid).set({
+        id: user.uid,
+        email: profile.email,
+        nickname: profile.nickname,
+        // 다른 사용자 정보도 필요한 경우에 추가할 수 있습니다.
+      });
+
+      // Main 화면으로 이동
+      navigation.navigate('Main', {
+        userId: user.uid,
+        nickname: profile.nickname,
+      });
+    } catch (error) {
+      console.error('사용자 등록 및 정보 저장 중 오류 발생:', error);
+      Alert.alert('오류', '사용자 등록 및 정보 저장 중 오류가 발생했습니다.');
+    }
+  };
+
+<<<<<<< HEAD
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
   // 수정할 때 사용 코드
   // await userCollection.doc(user.uid).update({nickName})
@@ -992,7 +1095,12 @@ const Login = ({navigation}) => {
 =======
   
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+<<<<<<< HEAD
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
+>>>>>>> e4b13fc (네이버, 카카오, 구글 파이어베이스 연동)
   const onSignIn = async () => {
     try {
       const {user} = await signIn({email, password});
@@ -1035,12 +1143,16 @@ const Login = ({navigation}) => {
         <View style={styles.titleTextContainer}>
           <View>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Text style={styles.firstTitleText}>당신의 취미를</Text>
 =======
             <Text style={styles.firstTitleText}>
               당신의 취미를
             </Text>
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+            <Text style={styles.firstTitleText}>당신의 취미를</Text>
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
           </View>
           <View>
             <Text style={styles.secondTitleText}>함께할 준비가 되셨나요?</Text>
@@ -1071,10 +1183,13 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d0fbf71 (refactor: chat)
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> e4b13fc (네이버, 카카오, 구글 파이어베이스 연동)
 =======
 =======
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
@@ -1112,6 +1227,9 @@ const Login = ({navigation}) => {
 =======
         <TouchableOpacity onPress={() => navigation.navigate('BottomTab')} style={styles.loginButton}>
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+        <TouchableOpacity onPress={onSignIn} style={styles.loginButton}>
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
           <Text style={styles.loginButtonText}>로그인</Text>
         </TouchableOpacity>
 
@@ -1228,12 +1346,17 @@ const styles = StyleSheet.create({
   signInButton: {
     borderRadius: 10,
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     backgroundColor: '#D7FFF3',
 =======
    
     backgroundColor:'#D7FFF3',
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+
+    backgroundColor: '#D7FFF3',
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
     flex: 0.12,
     justifyContent: 'center',
     alignItems: 'center',

@@ -8,9 +8,12 @@ const Main = ({ navigation, route }) => {
     console.log(route);
     const [optionClick, setOptionClick] = useState(null);
     // const { userId, nickname } = route.params;
+<<<<<<< HEAD
 =======
     const [optionClick, setOptionClick] = useState(null);
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> 5b0d024 (네이버, 카카오, 구글 파이어베이스 연동)
 
     const handleOptionClick = (id) => {
         setOptionClick(id);

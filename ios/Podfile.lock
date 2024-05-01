@@ -2563,6 +2563,7 @@ PODS:
     - GoogleSignIn (~> 7.0.0)
     - React-Core
 <<<<<<< HEAD
+<<<<<<< HEAD
   - RNImageCropPicker (0.40.3):
     - React-Core
     - React-RCTImage
@@ -2686,6 +2687,9 @@ PODS:
 =======
   - RNNaverLogin (4.0.0-beta.1):
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+  - RNNaverLogin (4.0.0):
+>>>>>>> e4b13fc (네이버, 카카오, 구글 파이어베이스 연동)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2756,9 +2760,13 @@ DEPENDENCIES:
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - "kakao-login (from `../node_modules/@react-native-seoul/kakao-login`)"
 <<<<<<< HEAD
+<<<<<<< HEAD
   - naveridlogin-sdk-ios
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+  - naveridlogin-sdk-ios
+>>>>>>> e4b13fc (네이버, 카카오, 구글 파이어베이스 연동)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCT-Folly/Fabric (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTDeprecation (from `../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation`)
@@ -3364,12 +3372,16 @@ PODFILE CHECKSUM: 3a71ee1b4db33a57ef6353792c69834e5c551a23
   RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
   RNGestureHandler: 72574cf7d3910bdbdf8136c1caf70cd45ede9d9f
   RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
-  RNNaverLogin: af12cf085682b1160609505f2554c78c5a364b9b
+  RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
   RNScreens: cfe03c0356f5d19e1f04e45b7e2ff6edd92fe6e1
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: d97d4830fe26d7abad29a92f2b11012d2e1f58d1
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: b4bae90d5aa4b6543f82ee95ea7448bf2a617686
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+PODFILE CHECKSUM: 3a71ee1b4db33a57ef6353792c69834e5c551a23
+>>>>>>> e4b13fc (네이버, 카카오, 구글 파이어베이스 연동)
 
 COCOAPODS: 1.15.2
