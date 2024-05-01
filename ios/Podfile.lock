@@ -1221,10 +1221,14 @@ PODS:
     - hermes-engine/Pre-built (= 0.74.0)
   - hermes-engine/Pre-built (0.74.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 89ed0ac (refactor: chat)
   - kakao-login (5.4.1):
     - KakaoSDKAuth (= 2.22.0)
     - KakaoSDKCommon (= 2.22.0)
     - KakaoSDKUser (= 2.22.0)
+<<<<<<< HEAD
     - React
   - KakaoSDKAuth (2.22.0):
     - KakaoSDKCommon (= 2.22.0)
@@ -1255,6 +1259,20 @@ PODS:
   - KakaoSDKUser (2.11.1):
     - KakaoSDKAuth (= 2.11.1)
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+    - React
+  - KakaoSDKAuth (2.22.0):
+    - KakaoSDKCommon (= 2.22.0)
+  - KakaoSDKCommon (2.22.0):
+    - KakaoSDKCommon/Common (= 2.22.0)
+    - KakaoSDKCommon/Network (= 2.22.0)
+  - KakaoSDKCommon/Common (2.22.0)
+  - KakaoSDKCommon/Network (2.22.0):
+    - Alamofire (~> 5.9.0)
+    - KakaoSDKCommon/Common (= 2.22.0)
+  - KakaoSDKUser (2.22.0):
+    - KakaoSDKAuth (= 2.22.0)
+>>>>>>> 89ed0ac (refactor: chat)
   - leveldb-library (1.22.5)
   - nanopb (2.30909.1):
     - nanopb/decode (= 2.30909.1)
@@ -2204,10 +2222,14 @@ PODS:
   - react-native-safe-area-context (4.10.1):
     - React-Core
 <<<<<<< HEAD
+<<<<<<< HEAD
   - react-native-webview (13.8.7):
 =======
   - react-native-webview (13.8.6):
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+  - react-native-webview (13.8.7):
+>>>>>>> 89ed0ac (refactor: chat)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2484,6 +2506,7 @@ PODS:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
 =======
 >>>>>>> d0fbf71 (refactor: chat)
@@ -2539,6 +2562,9 @@ PODS:
 =======
   - RNGestureHandler (2.16.0):
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+  - RNGestureHandler (2.16.1):
+>>>>>>> 89ed0ac (refactor: chat)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2712,10 +2738,14 @@ PODS:
     - ReactCommon/turbomodule/core
     - Yoga
 <<<<<<< HEAD
+<<<<<<< HEAD
   - RNScreens (3.31.1):
 =======
   - RNScreens (3.30.1):
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+  - RNScreens (3.31.1):
+>>>>>>> 89ed0ac (refactor: chat)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2732,9 +2762,13 @@ PODS:
     - React-NativeModulesApple
     - React-RCTFabric
 <<<<<<< HEAD
+<<<<<<< HEAD
     - React-RCTImage
 =======
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+    - React-RCTImage
+>>>>>>> 89ed0ac (refactor: chat)
     - React-rendererdebug
     - React-utils
     - ReactCommon/turbomodule/bridging
@@ -3105,16 +3139,22 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 8000756fc1c19d2e5697b90311f7832d2e33f6cd
   hermes-engine: 6eae7edb2f563ee41d7c1f91f4f2e57c26d8a5c3
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 89ed0ac (refactor: chat)
   kakao-login: 6f7a39583ae9e1a4e76240e66ae3ec575d461d1e
   KakaoSDKAuth: 569b377eda622d93d4575240b8031cd658163eef
   KakaoSDKCommon: d57127c339fc79e73aa8b236a4c77211c29924f1
   KakaoSDKUser: 043bcd7e91454ebf3bf64f150c430e6f65f0a08d
+<<<<<<< HEAD
 =======
   kakao-login: d3dad7a7bc1a3d187cedb4de83b1ec2e9b1cda30
   KakaoSDKAuth: bb2dfa7be30daa8403c9cfc8001aa6fde7a5b779
   KakaoSDKCommon: 555e1bb46595b842ded01cf7888cc17bbae4e113
   KakaoSDKUser: 08c0a4f40bebdebdf948a9e3d0e44ed5c2754f99
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+>>>>>>> 89ed0ac (refactor: chat)
   leveldb-library: e8eadf9008a61f9e1dde3978c086d2b6d9b9dc28
   nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
   naveridlogin-sdk-ios: d5f9d92905a7e964976ebfdd665bee5fb75845c5
@@ -3149,10 +3189,14 @@ SPEC CHECKSUMS:
   react-native-maps: cbf2f03bfeebfd7ec45966b066db13a075fd2af3
   react-native-safe-area-context: dcab599c527c2d7de2d76507a523d20a0b83823d
 <<<<<<< HEAD
+<<<<<<< HEAD
   react-native-webview: 02b52dcd0c974c3a5430404f8c2a1a39afec2ac9
 =======
   react-native-webview: 5951c8e0d457322e39c580778dd8505daf3f0327
 >>>>>>> 8e5e8e0 (스타일 시트 정리 및 유저 정보 추가)
+=======
+  react-native-webview: 02b52dcd0c974c3a5430404f8c2a1a39afec2ac9
+>>>>>>> 89ed0ac (refactor: chat)
   React-nativeconfig: fef0a46effa630d72f137636a990d7df2f6a5f7c
   React-NativeModulesApple: 8257dd73991f2e410b9c9d12801691439a0dc821
   React-perflogger: 271f1111779fef70f9502d1d38da5132e5585230
@@ -3370,12 +3414,16 @@ PODFILE CHECKSUM: 3a71ee1b4db33a57ef6353792c69834e5c551a23
 >>>>>>> c8c80c7 (네이버, 카카오, 구글 파이어베이스 연동)
 =======
   RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
-  RNGestureHandler: 72574cf7d3910bdbdf8136c1caf70cd45ede9d9f
+  RNGestureHandler: ad030559c93b4fa018c35e84466021a03a71198c
   RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
   RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
+<<<<<<< HEAD
   RNScreens: cfe03c0356f5d19e1f04e45b7e2ff6edd92fe6e1
+=======
+  RNScreens: 30249f9331c3b00ae7cb7922e11f58b3ed369c07
+>>>>>>> b966d85 (refactor: chat)
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
-  Yoga: d97d4830fe26d7abad29a92f2b11012d2e1f58d1
+  Yoga: 3f9165051bbc60b66f6a88c5eeafd9e9faa29500
 
 <<<<<<< HEAD
 PODFILE CHECKSUM: b4bae90d5aa4b6543f82ee95ea7448bf2a617686

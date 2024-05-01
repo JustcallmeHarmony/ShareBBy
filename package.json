@@ -32,6 +32,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "date-fns": "^3.6.0",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -77,6 +78,8 @@
 =======
 =======
 >>>>>>> 5d9ee54 (build: 수신 변경 사항 긴급 땜빵)
+=======
+>>>>>>> 89ed0ac (refactor: chat)
     "date-fns": "^3.6.0",
 =======
 >>>>>>> 2551bb1 (refactor: chat)
@@ -107,6 +110,9 @@
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
 >>>>>>> e3e1fb3 (스타일 시트 정리 및 유저 정보 추가)
+=======
+    "dayjs": "^1.11.11",
+>>>>>>> 65c8b3d (refactor: chat)
     "metro-react-native-babel-preset": "^0.77.0",
     "react": "18.2.0",
     "react-native": "0.74.0",
