@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "date-fns": "^3.6.0",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -56,6 +57,9 @@
 >>>>>>> 53e8cd9 (build: 수신 변경 사항 긴급 땜빵)
 =======
 >>>>>>> b966d85 (refactor: chat)
+=======
+    "date-fns": "^3.6.0",
+>>>>>>> 4264290 (build: 패키지 추가 및 안드로이드 식별자 수정)
     "dayjs": "^1.11.11",
     "metro-react-native-babel-preset": "^0.77.0",
     "react": "18.2.0",
@@ -65,6 +69,7 @@
     "react-native-fast-image": "^8.6.3",
     "react-native-geolocation-service": "^5.3.1",
     "react-native-gesture-handler": "^2.16.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -108,6 +113,11 @@
 >>>>>>> 1a428d6 (first)
 >>>>>>> 42f5da0 (first)
 >>>>>>> 0c21e3a (first)
+=======
+    "react-native-gifted-chat": "^2.4.0",
+    "react-native-image-crop-picker": "^0.40.3",
+    "react-native-linear-gradient": "^2.8.3",
+>>>>>>> 4264290 (build: 패키지 추가 및 안드로이드 식별자 수정)
     "react-native-maps": "^1.14.0",
     "react-native-modal": "^13.0.1",
     "react-native-permissions": "^4.1.5",
@@ -116,12 +126,15 @@
     "react-native-screens": "^3.30.1",
     "react-native-select-dropdown": "^4.0.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     "react-native-skeleton-placeholder": "^5.2.4",
 =======
 >>>>>>> 9abf372 (build: 패키지 추가 및 안드로이드 식별자 수정)
 >>>>>>> aeae5df (build: 패키지 추가 및 안드로이드 식별자 수정)
+=======
+>>>>>>> 4264290 (build: 패키지 추가 및 안드로이드 식별자 수정)
     "react-native-webview": "^13.8.6"
   },
   "devDependencies": {
