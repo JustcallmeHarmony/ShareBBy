@@ -2402,11 +2402,7 @@ PODS:
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - React-Core
     - RNFBApp
-  - RNFBStorage (19.2.2):
-    - Firebase/Storage (= 10.24.0)
-    - React-Core
-    - RNFBApp
-  - RNGestureHandler (2.16.1):
+  - RNGestureHandler (2.16.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2430,7 +2426,7 @@ PODS:
   - RNGoogleSignin (11.0.1):
     - GoogleSignIn (~> 7.0.0)
     - React-Core
-  - RNNaverLogin (4.0.0):
+  - RNNaverLogin (4.0.0-beta.1):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2475,6 +2471,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - Yoga
   - SocketRocket (0.7.0)
+  - TOCropViewController (2.7.3)
   - Yoga (0.0.0)
 
 DEPENDENCIES:
@@ -2551,6 +2548,7 @@ DEPENDENCIES:
   - "RNFBStorage (from `../node_modules/@react-native-firebase/storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
+  - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
   - "RNNaverLogin (from `../node_modules/@react-native-seoul/naver-login`)"
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -2589,6 +2587,7 @@ SPEC REPOS:
     - PromisesObjC
     - RecaptchaInterop
     - SocketRocket
+    - TOCropViewController
 
 EXTERNAL SOURCES:
   boost:
@@ -2724,6 +2723,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-gesture-handler"
   RNGoogleSignin:
     :path: "../node_modules/@react-native-google-signin/google-signin"
+  RNImageCropPicker:
+    :path: "../node_modules/react-native-image-crop-picker"
   RNNaverLogin:
     :path: "../node_modules/@react-native-seoul/naver-login"
   RNScreens:
@@ -2826,9 +2827,9 @@ SPEC CHECKSUMS:
   RNFBApp: 91311b27bc9a33e23b76a62825afd1635501018a
   RNFBAuth: 92172d8976baaa829825017174106e2b2c550319
   RNFBFirestore: 58f9f2f1d61eadcf16bf6d75737d92ad651bb264
-  RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
-  RNGestureHandler: ad030559c93b4fa018c35e84466021a03a71198c
+  RNGestureHandler: 72574cf7d3910bdbdf8136c1caf70cd45ede9d9f
   RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
+<<<<<<< HEAD
   RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2839,7 +2840,12 @@ SPEC CHECKSUMS:
 =======
   RNScreens: 30249f9331c3b00ae7cb7922e11f58b3ed369c07
 >>>>>>> 98db30d (fix : conflict)
+=======
+  RNNaverLogin: af12cf085682b1160609505f2554c78c5a364b9b
+  RNScreens: cfe03c0356f5d19e1f04e45b7e2ff6edd92fe6e1
+>>>>>>> 6356e15 (first)
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+  TOCropViewController: b9b2905938c0424f289ea2d9964993044913fac6
   Yoga: 3f9165051bbc60b66f6a88c5eeafd9e9faa29500
 
 PODFILE CHECKSUM: 3a71ee1b4db33a57ef6353792c69834e5c551a23
