@@ -36,12 +36,21 @@
     "react-native-geolocation-service": "^5.3.1",
     "react-native-gesture-handler": "^2.16.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "react-native-image-crop-picker": "^0.40.3",
 =======
     "react-native-gifted-chat": "^2.4.0",
     "react-native-image-crop-picker": "^0.40.3",
     "react-native-linear-gradient": "^2.8.3",
 >>>>>>> 4264290 (build: 패키지 추가 및 안드로이드 식별자 수정)
+=======
+    "react-native-gifted-chat": "^2.4.0",
+    "react-native-image-crop-picker": "^0.40.3",
+    "react-native-linear-gradient": "^2.8.3",
+=======
+    "react-native-image-crop-picker": "^0.40.3",
+>>>>>>> c770bda (first)
+>>>>>>> 627863d (first)
     "react-native-maps": "^1.14.0",
     "react-native-modal": "^13.0.1",
     "react-native-permissions": "^4.1.5",
