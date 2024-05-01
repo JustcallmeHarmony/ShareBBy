@@ -151,6 +151,7 @@ const Login = ({navigation}) => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       const {idToken} = await GoogleSignin.signIn();
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
@@ -159,35 +160,41 @@ const Login = ({navigation}) => {
 =======
 =======
       const { idToken } = await GoogleSignin.signIn();
+=======
+      const {idToken} = await GoogleSignin.signIn();
+>>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
-      const currentUser = auth().currentUser;
-  
+      const user = auth().user;
+
       // 사용자 정보 가져오기
-      const email = currentUser.email;
-      const displayName = currentUser.displayName;
-      const photoURL = currentUser.photoURL;
-  
+      const email = user.email;
+      const displayName = user.displayName;
+      const photoURL = user.photoURL;
+
       console.log('구글 사용자 정보:', {
+        id: user.uid, // 유저 ID 사용
         email: email,
-        displayName: displayName,
+        nickName: displayName,
         photoURL: photoURL,
       });
-  
+
       // Firestore에 사용자 정보 저장
-      await firestore().collection('users').doc(currentUser.uid).set({
+      await firestore().collection('users').doc(user.uid).set({
+        id: user.uid,
         email: email,
-        displayName: displayName,
+        nickName: displayName,
         photoURL: photoURL,
       });
-  
+
       // Main 화면으로 이동
-      navigation.navigate('Main');
+      navigation.navigate('Main', {userId: email, nickname: displayName});
     } catch (error) {
       console.error('구글 로그인 오류:', error);
       Alert.alert('구글 로그인 실패');
     }
   };
+<<<<<<< HEAD
   
 >>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
 
@@ -412,6 +419,29 @@ const Login = ({navigation}) => {
     }
   };
 
+=======
+
+  const kakaoLogins = async () => {
+    try {
+      const result = await KakaoLogin.login();
+      console.log('Kakao Login Result:', result);
+      if (result) {
+        console.log('Kakao Login Success');
+        await getKakaoProfile();
+      } else {
+        console.log('Kakao Login Failed');
+        Alert.alert('카카오 로그인 실패', '카카오 로그인에 실패했습니다.');
+      }
+    } catch (error) {
+      console.error('카카오 로그인 오류:', error);
+      Alert.alert(
+        '카카오 로그인 오류',
+        '카카오 로그인 중 오류가 발생했습니다.',
+      );
+    }
+  };
+
+>>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
   const getKakaoProfile = async () => {
     try {
       console.log('Fetching Kakao Profile');
@@ -434,6 +464,7 @@ const Login = ({navigation}) => {
         '카카오 프로필 정보를 가져오는 데 오류가 발생했습니다.',
       );
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   const kakaoLogins = () => {
@@ -505,9 +536,9 @@ const Login = ({navigation}) => {
 =======
 >>>>>>> 2551bb1 (refactor: chat)
 >>>>>>> 18e65b1 (refactor: chat)
+=======
+>>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
   };
-  
-  
 
   const registerKakaoUser = async profile => {
     try {
@@ -517,6 +548,7 @@ const Login = ({navigation}) => {
         'temporary_password',
       );
       console.log('Firebase Auth User:', user);
+<<<<<<< HEAD
 
       // Firestore에 사용자 정보 저장
       await firestore().collection('users').doc(user.uid).set({
@@ -613,6 +645,28 @@ const Login = ({navigation}) => {
 =======
   
 >>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
+=======
+
+      // Firestore에 사용자 정보 저장
+      await firestore().collection('users').doc(user.uid).set({
+        id: user.uid,
+        email: profile.email,
+        nickname: profile.nickname,
+        // 다른 사용자 정보도 필요한 경우에 추가할 수 있습니다.
+      });
+
+      // Main 화면으로 이동
+      navigation.navigate('Main', {
+        userId: user.uid,
+        nickname: profile.nickname,
+      });
+    } catch (error) {
+      console.error('사용자 등록 및 정보 저장 중 오류 발생:', error);
+      Alert.alert('오류', '사용자 등록 및 정보 저장 중 오류가 발생했습니다.');
+    }
+  };
+
+>>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
   const onSignIn = async () => {
     try {
       const {user} = await signIn({email, password});
@@ -660,6 +714,7 @@ const Login = ({navigation}) => {
         </View>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         {/* <TextInput
                 style={{ height: 40, width: 200, borderColor: 'gray', borderWidth: 1, marginBottom: 10 }}
@@ -676,6 +731,8 @@ const Login = ({navigation}) => {
 =======
 >>>>>>> b966d85 (refactor: chat)
 >>>>>>> 18e65b1 (refactor: chat)
+=======
+>>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
         <TouchableOpacity onPress={onSignIn} style={styles.loginButton}>
           <Text style={styles.loginButtonText}>로그인</Text>
         </TouchableOpacity>
