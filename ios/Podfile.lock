@@ -2426,7 +2426,23 @@ PODS:
   - RNGoogleSignin (11.0.1):
     - GoogleSignIn (~> 7.0.0)
     - React-Core
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  - RNImageCropPicker (0.40.3):
+    - React-Core
+    - React-RCTImage
+    - RNImageCropPicker/QBImagePickerController (= 0.40.3)
+    - TOCropViewController
+  - RNImageCropPicker/QBImagePickerController (0.40.3):
+    - React-Core
+    - React-RCTImage
+    - TOCropViewController
+>>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
   - RNNaverLogin (4.0.0-beta.1):
+=======
+  - RNNaverLogin (4.0.0):
+>>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2830,6 +2846,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: 72574cf7d3910bdbdf8136c1caf70cd45ede9d9f
   RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
 <<<<<<< HEAD
+<<<<<<< HEAD
   RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2841,16 +2858,29 @@ SPEC CHECKSUMS:
   RNScreens: 30249f9331c3b00ae7cb7922e11f58b3ed369c07
 >>>>>>> 98db30d (fix : conflict)
 =======
+=======
+=======
+<<<<<<< HEAD
+  RNImageCropPicker: e7ab6fb43d2fc3e84651e786ef4a080d63b0ed3d
+>>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
+>>>>>>> e6d36e5 (네이버, 카카오, 구글 파이어베이스 연동)
   RNNaverLogin: af12cf085682b1160609505f2554c78c5a364b9b
+=======
+  RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
+>>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
   RNScreens: cfe03c0356f5d19e1f04e45b7e2ff6edd92fe6e1
 >>>>>>> 6356e15 (first)
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 3f9165051bbc60b66f6a88c5eeafd9e9faa29500
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 PODFILE CHECKSUM: 3a71ee1b4db33a57ef6353792c69834e5c551a23
 =======
 PODFILE CHECKSUM: b4bae90d5aa4b6543f82ee95ea7448bf2a617686
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
+=======
+PODFILE CHECKSUM: 3a71ee1b4db33a57ef6353792c69834e5c551a23
+>>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
 
 COCOAPODS: 1.15.2

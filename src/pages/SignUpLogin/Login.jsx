@@ -148,6 +148,7 @@ const Login = ({navigation}) => {
   const onGoogleButtonPress = async () => {
     try {
 <<<<<<< HEAD
+<<<<<<< HEAD
       const {idToken} = await GoogleSignin.signIn();
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
@@ -174,37 +175,42 @@ const Login = ({navigation}) => {
         photoURL: photoURL,
 =======
       const { idToken } = await GoogleSignin.signIn();
+=======
+      const {idToken} = await GoogleSignin.signIn();
+>>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
-      const currentUser = auth().currentUser;
-  
+      const user = auth().user;
+
       // 사용자 정보 가져오기
-      const email = currentUser.email;
-      const displayName = currentUser.displayName;
-      const photoURL = currentUser.photoURL;
-  
+      const email = user.email;
+      const displayName = user.displayName;
+      const photoURL = user.photoURL;
+
       console.log('구글 사용자 정보:', {
+        id: user.uid, // 유저 ID 사용
         email: email,
-        displayName: displayName,
+        nickName: displayName,
         photoURL: photoURL,
       });
-  
+
       // Firestore에 사용자 정보 저장
-      await firestore().collection('users').doc(currentUser.uid).set({
+      await firestore().collection('users').doc(user.uid).set({
+        id: user.uid,
         email: email,
-        displayName: displayName,
+        nickName: displayName,
         photoURL: photoURL,
       });
-  
+
       // Main 화면으로 이동
-      navigation.navigate('Main');
+      navigation.navigate('Main', {userId: email, nickname: displayName});
     } catch (error) {
       console.error('구글 로그인 오류:', error);
       Alert.alert('구글 로그인 실패');
     }
   };
-  
 
+<<<<<<< HEAD
   const kakaoLogins = () => {
     KakaoLogin.login()
       .then(result => {
@@ -250,13 +256,58 @@ const Login = ({navigation}) => {
     } catch (error) {
       console.error('구글 로그인 오류:', error);
       Alert.alert('구글 로그인 실패');
+=======
+  const kakaoLogins = async () => {
+    try {
+      const result = await KakaoLogin.login();
+      console.log('Kakao Login Result:', result);
+      if (result) {
+        console.log('Kakao Login Success');
+        await getKakaoProfile();
+      } else {
+        console.log('Kakao Login Failed');
+        Alert.alert('카카오 로그인 실패', '카카오 로그인에 실패했습니다.');
+      }
+    } catch (error) {
+      console.error('카카오 로그인 오류:', error);
+      Alert.alert(
+        '카카오 로그인 오류',
+        '카카오 로그인 중 오류가 발생했습니다.',
+      );
     }
   };
-  
-  
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+  const getKakaoProfile = async () => {
+    try {
+      console.log('Fetching Kakao Profile');
+      const profile = await KakaoLogin.getProfile();
+      console.log('Kakao Profile:', profile);
+      if (profile) {
+        console.log('Kakao Profile Success');
+        await registerKakaoUser(profile);
+      } else {
+        console.log('Failed to get Kakao profile');
+        Alert.alert(
+          '카카오 프로필 정보 가져오기 실패',
+          '카카오 프로필 정보를 가져오는 데 실패했습니다.',
+        );
+      }
+    } catch (error) {
+      console.error('Failed to get Kakao profile:', error);
+      Alert.alert(
+        '카카오 프로필 정보 가져오기 오류',
+        '카카오 프로필 정보를 가져오는 데 오류가 발생했습니다.',
+      );
+>>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
+    }
+  };
+
+<<<<<<< HEAD
+>>>>>>> e6d36e5 (네이버, 카카오, 구글 파이어베이스 연동)
 
 >>>>>>> d703c7a (스타일 시트 정리 및 유저 정보 추가)
 <<<<<<< HEAD
@@ -378,7 +429,40 @@ const Login = ({navigation}) => {
 =======
   
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
+<<<<<<< HEAD
 >>>>>>> d703c7a (스타일 시트 정리 및 유저 정보 추가)
+=======
+=======
+  const registerKakaoUser = async profile => {
+    try {
+      // Firebase Authentication에 사용자 등록
+      const {user} = await auth().createUserWithEmailAndPassword(
+        `${profile.email}`,
+        'temporary_password',
+      );
+      console.log('Firebase Auth User:', user);
+
+      // Firestore에 사용자 정보 저장
+      await firestore().collection('users').doc(user.uid).set({
+        id: user.uid,
+        email: profile.email,
+        nickname: profile.nickname,
+        // 다른 사용자 정보도 필요한 경우에 추가할 수 있습니다.
+      });
+
+      // Main 화면으로 이동
+      navigation.navigate('Main', {
+        userId: user.uid,
+        nickname: profile.nickname,
+      });
+    } catch (error) {
+      console.error('사용자 등록 및 정보 저장 중 오류 발생:', error);
+      Alert.alert('오류', '사용자 등록 및 정보 저장 중 오류가 발생했습니다.');
+    }
+  };
+
+>>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
+>>>>>>> e6d36e5 (네이버, 카카오, 구글 파이어베이스 연동)
   const onSignIn = async () => {
     try {
       const {user} = await signIn({email, password});
