@@ -78,12 +78,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 137d8cc (first)
     "react-native-gifted-chat": "^2.4.0",
     "react-native-image-crop-picker": "^0.40.3",
     "react-native-linear-gradient": "^2.8.3",
 =======
     "react-native-image-crop-picker": "^0.40.3",
 >>>>>>> c770bda (first)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 0b1810b (first)
@@ -122,6 +126,8 @@
     "react-native-image-crop-picker": "^0.40.3",
     "react-native-linear-gradient": "^2.8.3",
 >>>>>>> 4264290 (build: 패키지 추가 및 안드로이드 식별자 수정)
+=======
+>>>>>>> 137d8cc (first)
     "react-native-maps": "^1.14.0",
     "react-native-modal": "^13.0.1",
     "react-native-permissions": "^4.1.5",
