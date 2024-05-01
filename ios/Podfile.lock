@@ -2423,6 +2423,7 @@ PODS:
     - RNFBApp
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   - RNFBStorage (19.2.2):
     - Firebase/Storage (= 10.24.0)
@@ -2456,6 +2457,9 @@ PODS:
 =======
   - RNGestureHandler (2.16.1):
 >>>>>>> 98db30d (fix : conflict)
+=======
+  - RNGestureHandler (2.16.0):
+>>>>>>> 5ee74d5 (first)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2479,6 +2483,7 @@ PODS:
   - RNGoogleSignin (11.0.1):
     - GoogleSignIn (~> 7.0.0)
     - React-Core
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2547,6 +2552,9 @@ PODS:
 =======
   - RNNaverLogin (4.0.0):
 >>>>>>> 98db30d (fix : conflict)
+=======
+  - RNNaverLogin (4.0.0-beta.1):
+>>>>>>> 5ee74d5 (first)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2708,7 +2716,10 @@ SPEC REPOS:
     - RecaptchaInterop
     - SocketRocket
     - TOCropViewController
+<<<<<<< HEAD
     - TOCropViewController
+=======
+>>>>>>> 5ee74d5 (first)
 
 EXTERNAL SOURCES:
   boost:
@@ -2851,8 +2862,11 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-google-signin/google-signin"
   RNImageCropPicker:
     :path: "../node_modules/react-native-image-crop-picker"
+<<<<<<< HEAD
   RNImageCropPicker:
     :path: "../node_modules/react-native-image-crop-picker"
+=======
+>>>>>>> 5ee74d5 (first)
   RNNaverLogin:
     :path: "../node_modules/@react-native-seoul/naver-login"
   RNScreens:
@@ -2965,6 +2979,7 @@ SPEC CHECKSUMS:
   RNFBFirestore: 58f9f2f1d61eadcf16bf6d75737d92ad651bb264
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
 <<<<<<< HEAD
@@ -3044,11 +3059,18 @@ SPEC CHECKSUMS:
   TOCropViewController: b9b2905938c0424f289ea2d9964993044913fac6
 =======
   RNGestureHandler: ad030559c93b4fa018c35e84466021a03a71198c
+=======
+  RNGestureHandler: 72574cf7d3910bdbdf8136c1caf70cd45ede9d9f
+>>>>>>> 5ee74d5 (first)
   RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
-  RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
-  RNScreens: 30249f9331c3b00ae7cb7922e11f58b3ed369c07
+  RNNaverLogin: af12cf085682b1160609505f2554c78c5a364b9b
+  RNScreens: cfe03c0356f5d19e1f04e45b7e2ff6edd92fe6e1
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+<<<<<<< HEAD
 >>>>>>> 98db30d (fix : conflict)
+=======
+  TOCropViewController: b9b2905938c0424f289ea2d9964993044913fac6
+>>>>>>> 5ee74d5 (first)
   Yoga: 3f9165051bbc60b66f6a88c5eeafd9e9faa29500
 
 <<<<<<< HEAD
