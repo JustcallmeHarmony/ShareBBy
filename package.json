@@ -27,6 +27,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "date-fns": "^3.6.0",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -64,6 +65,11 @@
 =======
     "date-fns": "^3.6.0",
 >>>>>>> df687c6 (build: 수신 변경 사항 긴급 땜빵)
+=======
+    "date-fns": "^3.6.0",
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
     "dayjs": "^1.11.11",
     "metro-react-native-babel-preset": "^0.77.0",
     "react": "18.2.0",

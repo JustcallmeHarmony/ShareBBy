@@ -164,6 +164,7 @@ const Login = ({navigation}) => {
       await auth().signInWithCredential(googleCredential);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
       const { idToken } = await GoogleSignin.signIn();
@@ -172,6 +173,9 @@ const Login = ({navigation}) => {
 >>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
+=======
+
+>>>>>>> d0fbf71 (refactor: chat)
       const user = auth().user;
 
       // 사용자 정보 가져오기
@@ -191,12 +195,23 @@ const Login = ({navigation}) => {
 >>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
+=======
+<<<<<<< HEAD
+>>>>>>> 2551bb1 (refactor: chat)
       const user = auth().user;
 
       // 사용자 정보 가져오기
       const email = user.email;
       const displayName = user.displayName;
       const photoURL = user.photoURL;
+=======
+      const currentUser = auth().currentUser;
+
+      // 사용자 정보 가져오기
+      const email = currentUser.email;
+      const displayName = currentUser.displayName;
+      const photoURL = currentUser.photoURL;
+>>>>>>> b966d85 (refactor: chat)
 
       console.log('구글 사용자 정보:', {
         id: user.uid, // 유저 ID 사용
@@ -221,6 +236,7 @@ const Login = ({navigation}) => {
     }
   };
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   const kakaoLogins = () => {
     KakaoLogin.login()
@@ -540,6 +556,8 @@ const Login = ({navigation}) => {
 >>>>>>> c8c80c7 (네이버, 카카오, 구글 파이어베이스 연동)
 
 <<<<<<< HEAD
+=======
+>>>>>>> 2551bb1 (refactor: chat)
   const kakaoLogins = async () => {
     try {
       const result = await KakaoLogin.login();
@@ -585,6 +603,7 @@ const Login = ({navigation}) => {
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   const kakaoLogins = () => {
     KakaoLogin.login()
@@ -598,6 +617,16 @@ const Login = ({navigation}) => {
 >>>>>>> eb2fa37 (스타일 시트 정리 및 유저 정보 추가)
 =======
 >>>>>>> 0ecd275 (소셜 로그인 연결 테스트)
+=======
+
+=======
+=======
+  const kakaoLogins = () => {
+    KakaoLogin.login()
+      .then(result => {
+        console.log('Login Success', JSON.stringify(result));
+        getProfile();
+>>>>>>> d0fbf71 (refactor: chat)
       })
       .catch(error => {
         if (error.code === 'E_CANCELLED_OPERATION') {
@@ -606,6 +635,26 @@ const Login = ({navigation}) => {
           console.log(`Login Fail(code:${error.code})`, error.message);
         }
       });
+<<<<<<< HEAD
+=======
+  };
+
+  const getProfile = () => {
+    KakaoLogin.getProfile()
+      .then(result => {
+        console.log('GetProfile Success', JSON.stringify(result));
+        const email = result.email;
+        const nickName = result.nickname;
+        console.log('이메일:', email);
+        console.log('닉네임:', nickName);
+        navigation.navigate('Main', {userId: email, nickname: nickName});
+      })
+      .catch(error => {
+        console.log(`GetProfile Fail(code:${error.code})`, error.message);
+      });
+>>>>>>> b966d85 (refactor: chat)
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
   };
 
 =======
@@ -749,6 +798,7 @@ const Login = ({navigation}) => {
   };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
 <<<<<<< HEAD
 >>>>>>> e6d36e5 (네이버, 카카오, 구글 파이어베이스 연동)
@@ -791,11 +841,17 @@ const Login = ({navigation}) => {
 >>>>>>> b966d85 (refactor: chat)
 =======
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
+=======
   // 수정할 때 사용 코드
   // await userCollection.doc(user.uid).update({nickName})
   // console.log((await userCollection.doc(user.uid).get()).data());
   // await userCollection.doc(user.uid).update({phoneNumber})
   // console.log((await userCollection.doc(user.uid).get()).data());
+<<<<<<< HEAD
   
 >>>>>>> 78fd805 (스타일 시트 정리 및 유저 정보 추가)
 <<<<<<< HEAD
@@ -831,7 +887,14 @@ const Login = ({navigation}) => {
   };
 
 >>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
+<<<<<<< HEAD
 >>>>>>> c8c80c7 (네이버, 카카오, 구글 파이어베이스 연동)
+=======
+=======
+
+>>>>>>> b966d85 (refactor: chat)
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
   const onSignIn = async () => {
     try {
       const {user} = await signIn({email, password});
@@ -891,6 +954,9 @@ const Login = ({navigation}) => {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 =======
         {/* <TextInput
                 style={{ height: 40, width: 200, borderColor: 'gray', borderWidth: 1, marginBottom: 10 }}
@@ -899,6 +965,7 @@ const Login = ({navigation}) => {
                 onChangeText={setName}
             /> */}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -915,6 +982,9 @@ const Login = ({navigation}) => {
 >>>>>>> b966d85 (refactor: chat)
 =======
 >>>>>>> 1bf1bf6 (fix : stylesSheet fix)
+=======
+>>>>>>> b966d85 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
         <TouchableOpacity onPress={onSignIn} style={styles.loginButton}>
           <Text style={styles.loginButtonText}>로그인</Text>
         </TouchableOpacity>

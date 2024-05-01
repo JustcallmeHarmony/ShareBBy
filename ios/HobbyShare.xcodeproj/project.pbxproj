@@ -16,8 +16,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 		3A736EFF3272E1F78AC3C36D /* Pods_HobbyShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB017A39B97ACDCC68207A4B /* Pods_HobbyShare.framework */; };
 =======
 		352730A026827C02691B8F47 /* Pods_HobbyShare_HobbyShareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34E87A95A89D14159BF009C /* Pods_HobbyShare_HobbyShareTests.framework */; };
@@ -33,6 +36,7 @@
 		3A736EFF3272E1F78AC3C36D /* Pods_HobbyShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB017A39B97ACDCC68207A4B /* Pods_HobbyShare.framework */; };
 >>>>>>> 2551bb1 (refactor: chat)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
 =======
@@ -46,6 +50,8 @@
 		352730A026827C02691B8F47 /* Pods_HobbyShare_HobbyShareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D34E87A95A89D14159BF009C /* Pods_HobbyShare_HobbyShareTests.framework */; };
 		5BCA5E83B2D065DEC1561833 /* Pods_HobbyShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65852B6CB75A1AF99B9CB529 /* Pods_HobbyShare.framework */; };
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 		7D3410EC2BD79CD60046200D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D3410EB2BD79CD60046200D /* GoogleService-Info.plist */; };
 		7D3410EF2BD7A3860046200D /* SwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3410EE2BD7A3860046200D /* SwiftBridge.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -78,8 +84,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 		5C8E0FE61029CA853DFD17CE /* Pods-HobbyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyShare.debug.xcconfig"; path = "Target Support Files/Pods-HobbyShare/Pods-HobbyShare.debug.xcconfig"; sourceTree = "<group>"; };
 		622BFBCEF76F45F25DFC9DB1 /* Pods-HobbyShare-HobbyShareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyShare-HobbyShareTests.debug.xcconfig"; path = "Target Support Files/Pods-HobbyShare-HobbyShareTests/Pods-HobbyShare-HobbyShareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		73FD7C8D5537AF095A72FA66 /* Pods-HobbyShare-HobbyShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyShare-HobbyShareTests.release.xcconfig"; path = "Target Support Files/Pods-HobbyShare-HobbyShareTests/Pods-HobbyShare-HobbyShareTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +109,7 @@
 		73FD7C8D5537AF095A72FA66 /* Pods-HobbyShare-HobbyShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyShare-HobbyShareTests.release.xcconfig"; path = "Target Support Files/Pods-HobbyShare-HobbyShareTests/Pods-HobbyShare-HobbyShareTests.release.xcconfig"; sourceTree = "<group>"; };
 >>>>>>> 2551bb1 (refactor: chat)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
 =======
@@ -116,6 +126,8 @@
 		65852B6CB75A1AF99B9CB529 /* Pods_HobbyShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FF2CA6887D1E270886FE56 /* Pods-HobbyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyShare.debug.xcconfig"; path = "Target Support Files/Pods-HobbyShare/Pods-HobbyShare.debug.xcconfig"; sourceTree = "<group>"; };
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 		7D3410EB2BD79CD60046200D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7D3410ED2BD7A3850046200D /* HobbyShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HobbyShare-Bridging-Header.h"; sourceTree = "<group>"; };
 		7D3410EE2BD7A3860046200D /* SwiftBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBridge.swift; sourceTree = "<group>"; };
@@ -125,12 +137,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2551bb1 (refactor: chat)
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
 =======
 >>>>>>> b966d85 (refactor: chat)
+=======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
 		AD71F67D64A9EB62A0E1E235 /* Pods-HobbyShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyShare.release.xcconfig"; path = "Target Support Files/Pods-HobbyShare/Pods-HobbyShare.release.xcconfig"; sourceTree = "<group>"; };
 		DB017A39B97ACDCC68207A4B /* Pods_HobbyShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -138,8 +155,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 =======
 		D34E87A95A89D14159BF009C /* Pods_HobbyShare_HobbyShareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HobbyShare_HobbyShareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3CF81A78DD13FE1203ACD2 /* Pods-HobbyShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyShare.release.xcconfig"; path = "Target Support Files/Pods-HobbyShare/Pods-HobbyShare.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +172,7 @@
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
 =======
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
@@ -169,6 +190,8 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EF425E137F8A6F445F62999B /* Pods-HobbyShare-HobbyShareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HobbyShare-HobbyShareTests.debug.xcconfig"; path = "Target Support Files/Pods-HobbyShare-HobbyShareTests/Pods-HobbyShare-HobbyShareTests.debug.xcconfig"; sourceTree = "<group>"; };
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +204,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 				FA1864729245D0CF58DFCB39 /* Pods_HobbyShare_HobbyShareTests.framework in Frameworks */,
 =======
 				352730A026827C02691B8F47 /* Pods_HobbyShare_HobbyShareTests.framework in Frameworks */,
@@ -191,6 +217,7 @@
 =======
 				FA1864729245D0CF58DFCB39 /* Pods_HobbyShare_HobbyShareTests.framework in Frameworks */,
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -207,6 +234,8 @@
 =======
 				352730A026827C02691B8F47 /* Pods_HobbyShare_HobbyShareTests.framework in Frameworks */,
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +248,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 				3A736EFF3272E1F78AC3C36D /* Pods_HobbyShare.framework in Frameworks */,
 =======
 				5BCA5E83B2D065DEC1561833 /* Pods_HobbyShare.framework in Frameworks */,
@@ -229,6 +261,7 @@
 =======
 				3A736EFF3272E1F78AC3C36D /* Pods_HobbyShare.framework in Frameworks */,
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -245,6 +278,8 @@
 =======
 				5BCA5E83B2D065DEC1561833 /* Pods_HobbyShare.framework in Frameworks */,
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,8 +329,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 				DB017A39B97ACDCC68207A4B /* Pods_HobbyShare.framework */,
 				EFE4E4F0C2E62418555840A2 /* Pods_HobbyShare_HobbyShareTests.framework */,
 =======
@@ -313,6 +351,7 @@
 				EFE4E4F0C2E62418555840A2 /* Pods_HobbyShare_HobbyShareTests.framework */,
 >>>>>>> 2551bb1 (refactor: chat)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
 =======
@@ -327,6 +366,8 @@
 				65852B6CB75A1AF99B9CB529 /* Pods_HobbyShare.framework */,
 				D34E87A95A89D14159BF009C /* Pods_HobbyShare_HobbyShareTests.framework */,
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -370,12 +411,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2551bb1 (refactor: chat)
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
 =======
 >>>>>>> b966d85 (refactor: chat)
+=======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
 				5C8E0FE61029CA853DFD17CE /* Pods-HobbyShare.debug.xcconfig */,
 				AD71F67D64A9EB62A0E1E235 /* Pods-HobbyShare.release.xcconfig */,
 				622BFBCEF76F45F25DFC9DB1 /* Pods-HobbyShare-HobbyShareTests.debug.xcconfig */,
@@ -383,6 +429,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
 =======
@@ -400,6 +449,7 @@
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
 =======
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
@@ -413,6 +463,8 @@
 >>>>>>> b966d85 (refactor: chat)
 =======
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -429,12 +481,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2551bb1 (refactor: chat)
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
 =======
 >>>>>>> b966d85 (refactor: chat)
+=======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
 				1B21D29960313BBDFA8C2A56 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -444,8 +501,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 =======
 				0CC8DF3392D9FBD793789EA7 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -460,6 +520,7 @@
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
 =======
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
@@ -479,6 +540,8 @@
 				B9C220E7A73D5C97480755C6 /* [CP] Embed Pods Frameworks */,
 				C083F01157D9F600043C4A0C /* [CP] Copy Pods Resources */,
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			);
 			buildRules = (
 			);
@@ -499,6 +562,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 				F69C98D1D8BA73BE99EF1D71 /* [CP] Check Pods Manifest.lock */,
 =======
 				F547CEF19F98E120FBC630C5 /* [CP] Check Pods Manifest.lock */,
@@ -509,6 +575,7 @@
 =======
 				F69C98D1D8BA73BE99EF1D71 /* [CP] Check Pods Manifest.lock */,
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -525,6 +592,8 @@
 =======
 				F547CEF19F98E120FBC630C5 /* [CP] Check Pods Manifest.lock */,
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
@@ -534,8 +603,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 				E959302FCFA4F74E0BB1BFBE /* [CP] Embed Pods Frameworks */,
 				0477C933FC445A43643E5641 /* [CP] Copy Pods Resources */,
 				EA6C9F6C2846771D7D8222C6 /* [CP-User] [RNFB] Core Configuration */,
@@ -556,6 +628,7 @@
 				EA6C9F6C2846771D7D8222C6 /* [CP-User] [RNFB] Core Configuration */,
 >>>>>>> 2551bb1 (refactor: chat)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
 =======
@@ -572,6 +645,8 @@
 				AFD2F4608DBF7F901A232355 /* [CP] Copy Pods Resources */,
 				6FAAF60519EF2FA14AF7EB2E /* [CP-User] [RNFB] Core Configuration */,
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			);
 			buildRules = (
 			);
@@ -660,12 +735,17 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2551bb1 (refactor: chat)
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
 =======
 >>>>>>> b966d85 (refactor: chat)
+=======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
 		0477C933FC445A43643E5641 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -687,6 +767,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 =======
 		0CC8DF3392D9FBD793789EA7 /* [CP] Check Pods Manifest.lock */ = {
 <<<<<<< HEAD
@@ -695,6 +778,7 @@
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
 =======
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -709,6 +793,8 @@
 =======
 		0CC8DF3392D9FBD793789EA7 /* [CP] Check Pods Manifest.lock */ = {
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -735,6 +821,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 		4C484F666CB07ADB75F68277 /* [CP] Copy Pods Resources */ = {
 =======
 		6FAAF60519EF2FA14AF7EB2E /* [CP-User] [RNFB] Core Configuration */ = {
@@ -745,6 +834,7 @@
 =======
 		4C484F666CB07ADB75F68277 /* [CP] Copy Pods Resources */ = {
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -761,10 +851,13 @@
 =======
 		6FAAF60519EF2FA14AF7EB2E /* [CP-User] [RNFB] Core Configuration */ = {
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -776,6 +869,10 @@
 >>>>>>> 12c3ae4 (fix : conflict)
 =======
 >>>>>>> b966d85 (refactor: chat)
+=======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HobbyShare-HobbyShareTests/Pods-HobbyShare-HobbyShareTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
@@ -809,6 +906,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
 =======
@@ -831,6 +931,7 @@
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
 =======
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
@@ -844,6 +945,8 @@
 >>>>>>> b966d85 (refactor: chat)
 =======
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -865,6 +968,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 		EA6C9F6C2846771D7D8222C6 /* [CP-User] [RNFB] Core Configuration */ = {
 =======
 		AFD2F4608DBF7F901A232355 /* [CP] Copy Pods Resources */ = {
@@ -875,6 +981,7 @@
 =======
 		EA6C9F6C2846771D7D8222C6 /* [CP-User] [RNFB] Core Configuration */ = {
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -891,10 +998,13 @@
 =======
 		AFD2F4608DBF7F901A232355 /* [CP] Copy Pods Resources */ = {
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -906,6 +1016,10 @@
 >>>>>>> 12c3ae4 (fix : conflict)
 =======
 >>>>>>> b966d85 (refactor: chat)
+=======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
+>>>>>>> d0fbf71 (refactor: chat)
 			inputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
@@ -918,6 +1032,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
 =======
@@ -978,6 +1095,7 @@
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
 =======
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
 >>>>>>> f7c744f5e251660f68d87f4d7144a88840bd0aa4
@@ -991,6 +1109,8 @@
 >>>>>>> b966d85 (refactor: chat)
 =======
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1051,6 +1171,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			baseConfigurationReference = 622BFBCEF76F45F25DFC9DB1 /* Pods-HobbyShare-HobbyShareTests.debug.xcconfig */;
 =======
 			baseConfigurationReference = EF425E137F8A6F445F62999B /* Pods-HobbyShare-HobbyShareTests.debug.xcconfig */;
@@ -1061,6 +1184,7 @@
 =======
 			baseConfigurationReference = 622BFBCEF76F45F25DFC9DB1 /* Pods-HobbyShare-HobbyShareTests.debug.xcconfig */;
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -1077,6 +1201,8 @@
 =======
 			baseConfigurationReference = EF425E137F8A6F445F62999B /* Pods-HobbyShare-HobbyShareTests.debug.xcconfig */;
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1109,6 +1235,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			baseConfigurationReference = 73FD7C8D5537AF095A72FA66 /* Pods-HobbyShare-HobbyShareTests.release.xcconfig */;
 =======
 			baseConfigurationReference = 552B5830E614F91B8AE182ED /* Pods-HobbyShare-HobbyShareTests.release.xcconfig */;
@@ -1119,6 +1248,7 @@
 =======
 			baseConfigurationReference = 73FD7C8D5537AF095A72FA66 /* Pods-HobbyShare-HobbyShareTests.release.xcconfig */;
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -1135,6 +1265,8 @@
 =======
 			baseConfigurationReference = 552B5830E614F91B8AE182ED /* Pods-HobbyShare-HobbyShareTests.release.xcconfig */;
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1164,6 +1296,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			baseConfigurationReference = 5C8E0FE61029CA853DFD17CE /* Pods-HobbyShare.debug.xcconfig */;
 =======
 			baseConfigurationReference = 72FF2CA6887D1E270886FE56 /* Pods-HobbyShare.debug.xcconfig */;
@@ -1174,6 +1309,7 @@
 =======
 			baseConfigurationReference = 5C8E0FE61029CA853DFD17CE /* Pods-HobbyShare.debug.xcconfig */;
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -1190,6 +1326,8 @@
 =======
 			baseConfigurationReference = 72FF2CA6887D1E270886FE56 /* Pods-HobbyShare.debug.xcconfig */;
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1222,6 +1360,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			baseConfigurationReference = AD71F67D64A9EB62A0E1E235 /* Pods-HobbyShare.release.xcconfig */;
 =======
 			baseConfigurationReference = DA3CF81A78DD13FE1203ACD2 /* Pods-HobbyShare.release.xcconfig */;
@@ -1232,6 +1373,7 @@
 =======
 			baseConfigurationReference = AD71F67D64A9EB62A0E1E235 /* Pods-HobbyShare.release.xcconfig */;
 >>>>>>> 2551bb1 (refactor: chat)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
 =======
@@ -1248,6 +1390,8 @@
 =======
 			baseConfigurationReference = DA3CF81A78DD13FE1203ACD2 /* Pods-HobbyShare.release.xcconfig */;
 >>>>>>> 98db30d (fix : conflict)
+=======
+>>>>>>> d0fbf71 (refactor: chat)
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
