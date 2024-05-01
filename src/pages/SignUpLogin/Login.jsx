@@ -150,12 +150,21 @@ const Login = ({navigation}) => {
       const {idToken} = await GoogleSignin.signIn();
       const googleCredential = auth.GoogleAuthProvider.credential(idToken);
       await auth().signInWithCredential(googleCredential);
+<<<<<<< HEAD
       const user = auth().user;
 
       // 사용자 정보 가져오기
       const email = user.email;
       const displayName = user.displayName;
       const photoURL = user.photoURL;
+=======
+      const currentUser = auth().currentUser;
+
+      // 사용자 정보 가져오기
+      const email = currentUser.email;
+      const displayName = currentUser.displayName;
+      const photoURL = currentUser.photoURL;
+>>>>>>> b966d85 (refactor: chat)
 
       console.log('구글 사용자 정보:', {
         id: user.uid, // 유저 ID 사용
@@ -180,6 +189,7 @@ const Login = ({navigation}) => {
     }
   };
 
+<<<<<<< HEAD
   const kakaoLogins = async () => {
     try {
       const result = await KakaoLogin.login();
@@ -222,6 +232,36 @@ const Login = ({navigation}) => {
         '카카오 프로필 정보를 가져오는 데 오류가 발생했습니다.',
       );
     }
+=======
+  const kakaoLogins = () => {
+    KakaoLogin.login()
+      .then(result => {
+        console.log('Login Success', JSON.stringify(result));
+        getProfile();
+      })
+      .catch(error => {
+        if (error.code === 'E_CANCELLED_OPERATION') {
+          console.log('Login Cancel', error.message);
+        } else {
+          console.log(`Login Fail(code:${error.code})`, error.message);
+        }
+      });
+  };
+
+  const getProfile = () => {
+    KakaoLogin.getProfile()
+      .then(result => {
+        console.log('GetProfile Success', JSON.stringify(result));
+        const email = result.email;
+        const nickName = result.nickname;
+        console.log('이메일:', email);
+        console.log('닉네임:', nickName);
+        navigation.navigate('Main', {userId: email, nickname: nickName});
+      })
+      .catch(error => {
+        console.log(`GetProfile Fail(code:${error.code})`, error.message);
+      });
+>>>>>>> b966d85 (refactor: chat)
   };
 
   const registerKakaoUser = async profile => {
@@ -252,13 +292,22 @@ const Login = ({navigation}) => {
     }
   };
 
+<<<<<<< HEAD
+=======
+  // 수정할 때 사용 코드
+  // await userCollection.doc(user.uid).update({nickName})
+  // console.log((await userCollection.doc(user.uid).get()).data());
+  // await userCollection.doc(user.uid).update({phoneNumber})
+  // console.log((await userCollection.doc(user.uid).get()).data());
+
+>>>>>>> b966d85 (refactor: chat)
   const onSignIn = async () => {
     try {
       const {user} = await signIn({email, password});
       // 로그인 정보 가져오기
       const userCollection = firestore().collection('users');
       console.log((await userCollection.doc(user.uid).get()).data());
-      navigation.navigate('Main', {userId: user.uid});
+      navigation.navigate('BottomTab', {userId: user.uid});
     } catch (e) {
       console.error('로그인 실패:', e);
       Alert.alert('로그인 실패');
@@ -298,6 +347,16 @@ const Login = ({navigation}) => {
           />
         </View>
 
+<<<<<<< HEAD
+=======
+        {/* <TextInput
+                style={{ height: 40, width: 200, borderColor: 'gray', borderWidth: 1, marginBottom: 10 }}
+                value={displayName}
+                placeholder="Display Name"
+                onChangeText={setName}
+            /> */}
+
+>>>>>>> b966d85 (refactor: chat)
         <TouchableOpacity onPress={onSignIn} style={styles.loginButton}>
           <Text style={styles.loginButtonText}>로그인</Text>
         </TouchableOpacity>
