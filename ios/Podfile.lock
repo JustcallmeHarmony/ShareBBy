@@ -2402,7 +2402,15 @@ PODS:
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - React-Core
     - RNFBApp
+<<<<<<< HEAD
   - RNGestureHandler (2.16.0):
+=======
+  - RNFBStorage (19.2.2):
+    - Firebase/Storage (= 10.24.0)
+    - React-Core
+    - RNFBApp
+  - RNGestureHandler (2.16.1):
+>>>>>>> 2551bb1 (refactor: chat)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2427,7 +2435,10 @@ PODS:
     - GoogleSignIn (~> 7.0.0)
     - React-Core
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2551bb1 (refactor: chat)
 <<<<<<< HEAD
   - RNImageCropPicker (0.40.3):
     - React-Core
@@ -2443,6 +2454,9 @@ PODS:
 =======
   - RNNaverLogin (4.0.0):
 >>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
+=======
+  - RNNaverLogin (4.0.0):
+>>>>>>> b966d85 (refactor: chat)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2843,6 +2857,7 @@ SPEC CHECKSUMS:
   RNFBApp: 91311b27bc9a33e23b76a62825afd1635501018a
   RNFBAuth: 92172d8976baaa829825017174106e2b2c550319
   RNFBFirestore: 58f9f2f1d61eadcf16bf6d75737d92ad651bb264
+<<<<<<< HEAD
   RNGestureHandler: 72574cf7d3910bdbdf8136c1caf70cd45ede9d9f
   RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
 <<<<<<< HEAD
@@ -2860,6 +2875,12 @@ SPEC CHECKSUMS:
 =======
 =======
 =======
+=======
+  RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
+  RNGestureHandler: ad030559c93b4fa018c35e84466021a03a71198c
+  RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
+<<<<<<< HEAD
+>>>>>>> 2551bb1 (refactor: chat)
 <<<<<<< HEAD
   RNImageCropPicker: e7ab6fb43d2fc3e84651e786ef4a080d63b0ed3d
 >>>>>>> ce7f70c (네이버, 카카오, 구글 파이어베이스 연동)
@@ -2869,7 +2890,14 @@ SPEC CHECKSUMS:
   RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
 >>>>>>> aed0baa (네이버, 카카오, 구글 파이어베이스 연동)
   RNScreens: cfe03c0356f5d19e1f04e45b7e2ff6edd92fe6e1
+<<<<<<< HEAD
 >>>>>>> 6356e15 (first)
+=======
+=======
+  RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
+  RNScreens: 30249f9331c3b00ae7cb7922e11f58b3ed369c07
+>>>>>>> b966d85 (refactor: chat)
+>>>>>>> 18e65b1 (refactor: chat)
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 3f9165051bbc60b66f6a88c5eeafd9e9faa29500
 
