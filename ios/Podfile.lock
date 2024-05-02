@@ -2409,8 +2409,15 @@ PODS:
     - Firebase/Storage (= 10.24.0)
     - React-Core
     - RNFBApp
+<<<<<<< HEAD
   - RNGestureHandler (2.16.1):
+<<<<<<< HEAD
 >>>>>>> 2551bb1 (refactor: chat)
+=======
+=======
+  - RNGestureHandler (2.16.0):
+>>>>>>> 6af1d08 (first)
+>>>>>>> 49beb3a (first)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2437,11 +2444,14 @@ PODS:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 2551bb1 (refactor: chat)
 =======
 >>>>>>> 12c3ae4 (fix : conflict)
+=======
+>>>>>>> 49beb3a (first)
 <<<<<<< HEAD
   - RNImageCropPicker (0.40.3):
     - React-Core
@@ -2463,6 +2473,21 @@ PODS:
 =======
   - RNNaverLogin (4.0.0):
 >>>>>>> 98db30d (fix : conflict)
+=======
+  - RNNaverLogin (4.0.0):
+=======
+  - RNImageCropPicker (0.40.3):
+    - React-Core
+    - React-RCTImage
+    - RNImageCropPicker/QBImagePickerController (= 0.40.3)
+    - TOCropViewController
+  - RNImageCropPicker/QBImagePickerController (0.40.3):
+    - React-Core
+    - React-RCTImage
+    - TOCropViewController
+  - RNNaverLogin (4.0.0-beta.1):
+>>>>>>> 6af1d08 (first)
+>>>>>>> b85da3a (first)
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2883,6 +2908,7 @@ SPEC CHECKSUMS:
 =======
 =======
   RNFBStorage: 2ef3bcc956d6c771f94efda0c3714c04019dde86
+<<<<<<< HEAD
   RNGestureHandler: ad030559c93b4fa018c35e84466021a03a71198c
   RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
 <<<<<<< HEAD
@@ -2903,6 +2929,7 @@ SPEC CHECKSUMS:
 =======
   RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
   RNScreens: 30249f9331c3b00ae7cb7922e11f58b3ed369c07
+<<<<<<< HEAD
 >>>>>>> b966d85 (refactor: chat)
 <<<<<<< HEAD
 >>>>>>> 18e65b1 (refactor: chat)
@@ -2911,8 +2938,21 @@ SPEC CHECKSUMS:
   RNNaverLogin: 4cf478363dae75da6d055a543f0789d3b777b3cb
   RNScreens: 30249f9331c3b00ae7cb7922e11f58b3ed369c07
 >>>>>>> 98db30d (fix : conflict)
+<<<<<<< HEAD
 >>>>>>> 0fee6db (fix : conflict)
+=======
+=======
+=======
+  RNGestureHandler: 72574cf7d3910bdbdf8136c1caf70cd45ede9d9f
+  RNGoogleSignin: 24d3b3261f78b0fae0aa013f8ab6f8d25e369b0c
+  RNImageCropPicker: e7ab6fb43d2fc3e84651e786ef4a080d63b0ed3d
+  RNNaverLogin: af12cf085682b1160609505f2554c78c5a364b9b
+  RNScreens: cfe03c0356f5d19e1f04e45b7e2ff6edd92fe6e1
+>>>>>>> 6af1d08 (first)
+>>>>>>> b85da3a (first)
+>>>>>>> 3a583e2 (first)
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+  TOCropViewController: b9b2905938c0424f289ea2d9964993044913fac6
   Yoga: 3f9165051bbc60b66f6a88c5eeafd9e9faa29500
 
 <<<<<<< HEAD
