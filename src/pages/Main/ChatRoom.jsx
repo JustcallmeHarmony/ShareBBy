@@ -35,7 +35,7 @@ import {
 
 const ChatRoom = ({route, navigation}) => {
   const {chatRoomId, chatRoomName, hobbiesId, members} = route.params;
-
+  console.log(members);
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState('');
   const [slideModalVisible, setSlideModalVisible] = useState(false);
@@ -534,7 +534,7 @@ const ChatRoom = ({route, navigation}) => {
         <View style={{flexDirection: 'row', alignItems: 'center', gap: 8}}>
           <Text style={styles.roomName}>{chatRoomName}</Text>
           <Text style={{fontSize: 18, color: '#A7A7A7', fontWeight: '600'}}>
-            {members.length}
+            {/* {members.length} */}
           </Text>
         </View>
         <TouchableOpacity onPress={toggleHamburgerModal}>
