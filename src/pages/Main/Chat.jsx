@@ -133,6 +133,7 @@ const Chat = () => {
             flex: 1,
             justifyContent: 'center',
             alignItems: 'flex-start',
+            
           }}>
           <Image
             style={{width: 52, height: 52, borderRadius: 8}}
@@ -152,8 +153,20 @@ const Chat = () => {
               alignItems: 'flex-end',
               gap: 4,
             }}>
-            <Text style={{fontSize: 16, fontWeight: '600'}}>{item.name}</Text>
-            <Text style={{fontSize: 14, color: '#A7A7A7'}}>
+            <Text
+              style={{
+                fontSize: 16,
+                fontWeight: '600',
+                fontFamily: 'Pretendard',
+              }}>
+              {item.name}
+            </Text>
+            <Text
+              style={{
+                fontSize: 14,
+                color: '#A7A7A7',
+                fontFamily: 'Pretendard',
+              }}>
               {item.members.length}
             </Text>
           </View>
@@ -165,7 +178,12 @@ const Chat = () => {
               fontSize: 10,
             }}>
             {latestChat && (
-              <Text style={{color: '#A7A7A7', fontSize: 13}}>
+              <Text
+                style={{
+                  color: '#A7A7A7',
+                  fontSize: 13,
+                  fontFamily: 'Pretendard',
+                }}>
                 {latestChat.text}
               </Text>
             )}
@@ -182,7 +200,7 @@ const Chat = () => {
   };
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
+    <SafeAreaView style={{flex: 1}}>
       <View
         style={{
           paddingTop: 8,
@@ -192,15 +210,16 @@ const Chat = () => {
           paddingHorizontal: 16,
           marginBottom: 32,
         }}>
-        <TouchableOpacity 
-          style={{flex : 1 }}
-          onPress={() => navigation.goBack()}>
+        <TouchableOpacity style={{flex: 1}} onPress={() => navigation.goBack()}>
           <Image source={BackIcon} style={{width: 24, height: 24}} />
         </TouchableOpacity>
-        <View style={{flex : 1,alignItems : 'center'}}>
-        <Text style={{fontSize: 24, fontWeight: '700'}}>채팅목록</Text>
+        <View style={{flex: 1, alignItems: 'center'}}>
+          <Text
+            style={{fontSize: 24, fontWeight: '700', fontFamily: 'Pretendard'}}>
+            채팅목록
+          </Text>
         </View>
-        <View style={{flex : 1, backgroundColor : 'green'}}/>
+        <View style={{flex: 1, backgroundColor: 'green'}} />
       </View>
       <View style={{flex: 1, alignItems: 'center'}}>
         <FlatList
