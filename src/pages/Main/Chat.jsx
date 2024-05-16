@@ -47,6 +47,7 @@ const Chat = () => {
           id: doc.id,
           ...doc.data(),
         }))
+
         .filter(room => room.members.includes(userToken)); //합쳐보기 방법 고민 필요.
 
       const latestChats = {};
@@ -117,7 +118,6 @@ const Chat = () => {
         chatRoomId: item.id,
         chatRoomName: item.name,
         hobbiesId: item.hobbiesId,
-        members: item.members,
       });
     };
 
@@ -171,19 +171,12 @@ const Chat = () => {
             )}
           </View>
         </View>
-        <View
-          style={{
-            flex: 0.8,
-            alignItems: 'flex-end',
-            justifyContent: 'flex-end',
-          }}>
-          <ChatListTime
-            type={formattedTime.type}
-            month={formattedTime.month}
-            day={formattedTime.day}
-            time={formattedTime.time}
-          />
-        </View>
+        <ChatListTime
+          type={formattedTime.type}
+          month={formattedTime.month}
+          day={formattedTime.day}
+          time={formattedTime.time}
+        />
       </TouchableOpacity>
     );
   };
@@ -199,11 +192,15 @@ const Chat = () => {
           paddingHorizontal: 16,
           marginBottom: 32,
         }}>
-        <TouchableOpacity onPress={() => navigation.goBack()}>
+        <TouchableOpacity 
+          style={{flex : 1 }}
+          onPress={() => navigation.goBack()}>
           <Image source={BackIcon} style={{width: 24, height: 24}} />
         </TouchableOpacity>
+        <View style={{flex : 1,alignItems : 'center'}}>
         <Text style={{fontSize: 24, fontWeight: '700'}}>채팅목록</Text>
-        <View />
+        </View>
+        <View style={{flex : 1, backgroundColor : 'green'}}/>
       </View>
       <View style={{flex: 1, alignItems: 'center'}}>
         <FlatList
